@@ -36,7 +36,10 @@
 *::after {
   box-sizing: border-box;
 }
-
+.scale{
+  height: 15%;
+  width: 15%;
+}
 .element {
     animation: pulse 5s infinite;
   }
