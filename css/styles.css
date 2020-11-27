@@ -55,8 +55,11 @@
     0% {
       background-color: #000000;
     }
-    100% {
+    50% {
       background-color: #001F3F;
+    }
+    100% {
+      background-color: #000000;
     }
   }
 
