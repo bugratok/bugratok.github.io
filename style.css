@@ -1,7 +1,10 @@
 html{
-    margin: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 div{
-    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
 }
