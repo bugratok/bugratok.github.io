@@ -38,6 +38,7 @@
 }
 .scale{
   max-width: 100%;
+  min-height: 10%;
   width: 10%;
   height: auto;
 }
