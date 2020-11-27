@@ -37,7 +37,7 @@
   box-sizing: border-box;
 }
 .element{
-  background-color: #000000;
+  background-color: rgb(17, 17, 17);
 }
 
 .uni{
@@ -50,12 +50,11 @@
    transition: color 0.2s ease-out;
   }
   .uni:hover {
-    transform:scale(1.05);
      color: rgb(0, 191, 255);
   }
   
 .seperate{
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 html {
