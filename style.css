@@ -1,9 +1,9 @@
-html{
+.html{
     margin-left: 30%;
     margin-right: 30%;
 }
 
-div{
+.div{
     border-style: solid;
     border-color: black;
     border-width: 10px;
