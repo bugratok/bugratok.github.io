@@ -36,27 +36,27 @@
 *::after {
   box-sizing: border-box;
 }
-.scale{
-  max-width: 100%;
-  min-height: 10%;
-  width: 10%;
-  height: auto;
+.element{
+  background-color: #000000;
 }
-.element {
-    animation: pulse 5s infinite;
+
+.uni{
+  color: rgb(255, 255, 255);
+
+  -webkit-transition: color 0.2s ease-out;
+   -moz-transition: color 0.2s ease-out;
+   -o-transition: color 0.2s ease-out;
+   -ms-transition: color 0.2s ease-out;
+   transition: color 0.2s ease-out;
+  }
+  .uni:hover {
+    transform:scale(1.05);
+     color: rgb(0, 191, 255);
   }
   
-  @keyframes pulse {
-    0% {
-      background-color: #000000;
-    }
-    50% {
-      background-color: #001F3F;
-    }
-    100% {
-      background-color: #000000;
-    }
-  }
+.seperate{
+  margin-top: 5%;
+}
 
 html {
   font-family: sans-serif;
