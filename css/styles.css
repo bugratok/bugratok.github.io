@@ -47,20 +47,6 @@
   box-sizing: border-box;
 }
 
-.element {
-  width: 100%;
-  height: 100%;
-  animation: pulse 5s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    background-color: #000000;
-  }
-  100% {
-    background-color: #001F3F;
-  }
-}
 html {
   font-family: sans-serif;
   line-height: 1.15;
