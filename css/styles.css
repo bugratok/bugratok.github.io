@@ -37,8 +37,9 @@
   box-sizing: border-box;
 }
 .scale{
-  height: 15%;
-  width: 15%;
+  max-width: 100%;
+  width: 10%;
+  height: auto;
 }
 .element {
     animation: pulse 5s infinite;
