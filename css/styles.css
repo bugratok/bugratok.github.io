@@ -37,8 +37,14 @@
   box-sizing: border-box;
 }
 .element{
-  background-image: linear-gradient(to top, rgb(8, 6, 6) , rgb(34, 11, 11));
+  /*background-image: linear-gradient(to top, rgb(36, 0, 0) , rgb(1, 0, 58));*/
+  background-color: #323232;
 
+}
+
+.fit{
+  width: 4%; 
+  height: auto;
 }
 
 .uni{
@@ -51,7 +57,7 @@
    transition: color 0.2s ease-out;
   }
   .uni:hover {
-     color: rgb(255, 93, 93);
+     color: #0d7377;
   }
   
 .seperate{
@@ -63,7 +69,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #000000;
+  background-color: #212121;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -6096,7 +6102,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #0b0b0c !important;
+  background-color: #212121 !important;
 }
 
 
