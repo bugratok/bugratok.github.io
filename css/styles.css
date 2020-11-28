@@ -37,10 +37,7 @@
   box-sizing: border-box;
 }
 .element{
-  
-  background: url("C:/Users/tokbu/Documents/GitHub/bugratok.github.io/assets/27263.jpg") repeat 0 0;
-  background-size: contain;
-  background-blend-mode: darken;
+  background-image: linear-gradient(to top, rgb(8, 6, 6) , rgb(34, 11, 11));
 
 }
 
