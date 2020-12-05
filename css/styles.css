@@ -36,14 +36,9 @@
 *::after {
   box-sizing: border-box;
 }
-.element{
-  /*background-image: linear-gradient(to top, rgb(36, 0, 0) , rgb(1, 0, 58));*/
-  background-color: #323232;
-
-}
 
 .beta {
-  animation: pulse 5s infinite;
+  animation: pulse 7s infinite;
 }
 
 @keyframes pulse {
@@ -10147,7 +10142,7 @@ h3 {
   }
 }
 .masthead {
-  padding-top: calc(6rem + 74px);
+  padding-top: calc(5rem + 54px);
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
@@ -10163,11 +10158,10 @@ h3 {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
+    font-size: 6rem;
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
