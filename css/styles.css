@@ -10142,7 +10142,7 @@ h3 {
   }
 }
 .masthead {
-  padding-top: calc(5rem + 54px);
+  padding-top: 5rem;
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
