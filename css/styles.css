@@ -58,6 +58,23 @@
   height: auto;
 }
 
+.ikinci{
+  background-color: #454545;
+}
+.harita{
+  max-width: 100%;
+  height: auto;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.altbilgi{
+  margin-top: 3%;
+}
+
 .uni{
   color: rgb(255, 255, 255);
 

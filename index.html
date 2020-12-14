@@ -10,6 +10,9 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
+        <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+        <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+        <script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
@@ -17,6 +20,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    
     <body id="page-top">
         <!-- Masthead-->
         <header class="masthead text-white text-center">
@@ -54,11 +58,126 @@
                         <p class="masthead-subheading font-weight-bold mb-0">Karlsruhe University of Education</p>
                         <p class="masthead-subheading font-weight-light mb-0">Exchange on English Language Teaching</p>
                     </div>
-                    
                 </div>
                 
-                
+                 </br>
+                 </br>
+                 </br>
             </div>
+
+            <div class="ikinci">
+                </br>
+                </br>
+                </br>
+                    <h1 class="masthead-heading beta mb-0">Countries I have visited;</h1>
+                    <div class="divider-custom divider-light">
+                        <div class="divider-custom-line"></div>
+                        </div>
+                        <div class="harita" id="mapdiv" style="width: 1000px; height: 450px;">
+                        </div>
+                </br>
+                </br>
+                </br>
+                </br>
+            </div>
+            <p class="altbilgi">2020 Balikesir</p>
         </header>
     </body>
+
+    <script type="text/javascript">
+        var map = AmCharts.makeChart("mapdiv",{
+        type: "map",
+        theme: "dark",
+        projection: "miller",
+        panEventsEnabled : true,
+        backgroundColor : "#113757",
+        backgroundAlpha : 1,
+        zoomControl: {
+        zoomControlEnabled : true
+        },
+        dataProvider : {
+        map : "worldHigh",
+        getAreasFromMap : true,
+        areas :
+        [
+            {
+                "id": "AT",
+                "showAsSelected": true
+            },
+            {
+                "id": "BE",
+                "showAsSelected": true
+            },
+            {
+                "id": "CZ",
+                "showAsSelected": true
+            },
+            {
+                "id": "FR",
+                "showAsSelected": true
+            },
+            {
+                "id": "DE",
+                "showAsSelected": true
+            },
+            {
+                "id": "HU",
+                "showAsSelected": true
+            },
+            {
+                "id": "IT",
+                "showAsSelected": true
+            },
+            {
+                "id": "LU",
+                "showAsSelected": true
+            },
+            {
+                "id": "NL",
+                "showAsSelected": true
+            },
+            {
+                "id": "PL",
+                "showAsSelected": true
+            },
+            {
+                "id": "PT",
+                "showAsSelected": true
+            },
+            {
+                "id": "SK",
+                "showAsSelected": true
+            },
+            {
+                "id": "SI",
+                "showAsSelected": true
+            },
+            {
+                "id": "SE",
+                "showAsSelected": true
+            },
+            {
+                "id": "CH",
+                "showAsSelected": true
+            },
+            {
+                "id": "TR",
+                "showAsSelected": true
+            },
+            {
+                "id": "VA",
+                "showAsSelected": true
+            }
+        ]
+        },
+        areasSettings : {
+        color : "#B4B4B7",
+        colorSolid : "#FC0A0A",
+        selectedColor : "#FC0A0A",
+        outlineColor : "#666666",
+        rollOverColor : "#000000",
+        rollOverOutlineColor : "#000000"
+        }
+        });
+        </script>
 </html>
