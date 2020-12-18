@@ -71,6 +71,19 @@
   }
 }
 
+.wrapper span{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: inherit;
+}
+.wrapper span:first-child{
+  filter: blur(50px);
+}
+.wrapper span:last-child{
+  filter: blur(50px);
+}
+
 
 
 .beta {
