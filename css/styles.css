@@ -6,85 +6,11 @@ body{
   margin: 0;
 }
 
-#header{
+.header{
   background-color: #303030;
-  box-shadow: 0 2px 25px -2px rgba(0,0,0, .7);
-  position: relative;
+  border-bottom: solid 2px;
 }
 
-#logo{
-  font-size: 50px;
-}
-
-#main{
-  background-color: #858585;
+.text-center{
   text-align: center;
-  padding-top: 50px;
-}
-
-
-.greet{
-  font-size: 125px;
-  margin: auto;
-}
-
-.name{
-  font-size: 10rem;
-  margin: auto;
-  font-weight: 800;
-}
-
-.text-color-white{
-  color: #fff;
-}
-
-.vertical-align{
-  margin: auto;
-}
-.container{
-  display: inline-block;
-}
-
-
-
-@media only screen and (max-width: 1080px) {
-  #header{
-    background-color: #303030;
-    box-shadow: 0 2px 25px -2px rgba(0,0,0, .7);
-    position: relative;
-  }
-  
-  #logo{
-    font-size: 40px;
-    margin-left: 5%;
-  }
-  
-  #main{
-    background-color: #858585;
-    text-align: center;
-    padding-top: 50px;
-  }
-  
-  .greet{
-    font-size: 7rem;
-    margin: auto;
-  }
-  
-  .name{
-    font-size: 10rem;
-    margin: auto;
-    font-weight: 800;
-  }
-  
-  .text-color-white{
-    color: #fff;
-  }
-  
-  .inside-header{
-    padding: 5px;
-  }
-  .container{
-    display: inline-block;
-    padding: 40% 0 70% 0;
-  }
 }

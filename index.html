@@ -6,36 +6,35 @@
         <title>Welcome!</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         
   
     </head>
-    <body>
-        <div id="header">
-            <div class="inside-header"> 
-                <h1 id="logo" class="text-color-white">Bugra Tok</h1>
+    <body class="bg-light">
+        <nav class="navbar bg-dark">
+            <div class="container justify-content-center">
+              <h1 class="display-4 text-white">Welcome!</h1>
+            </div>
+          </nav>
+        <div class="mw-100 container bg-light">
+            <div style="padding: 100px 0 100px 0;" class="text-center">
+                <h1 class="display-2">Hey! I am</h1>
+                <h1 id="name" class="display-1">Bugra Tok</h1>
             </div>
         </div>
-        <div id="main">
-            <div class="container">
-                <h1 class="greet">Hey!</h1>
-                <h1 class="greet">I am</h1>
-                <h1 id="name" class="name">Bugra Tok</h1>
-            </div>
-            <p id="paragraf"></p>
-        </div>s
         <script type="text/javascript">
-        var elem = document.getElementById("name");
-        var text = ["Bugra Tok", "Developer", "Traveller", "Photographer"]
-        var counter = 0;
-            setInterval(function change(){
-                elem.innerHTML = text[counter]; 
-                counter++;
-                if (counter >= text.length) {
-                    counter = 0;
-                    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
-                }
-            }, 1000);
-        </script>
+            var elem = document.getElementById("name");
+            var text = ["Bugra Tok", "Developer", "Traveller", "Photographer"]
+            var counter = 0;
+                setInterval(function change(){
+                    elem.innerHTML = text[counter]; 
+                    counter++;
+                    if (counter >= text.length) {
+                        counter = 0;
+                    }
+                }, 500);
+            </script>
     </body>
 
 </html>
