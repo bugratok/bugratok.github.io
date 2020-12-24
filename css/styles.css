@@ -75,3 +75,78 @@ h1 .a{
   color: gray;
   font-size: 4.5rem;
 }
+
+
+@media only screen and (max-width: 1000px) {
+   header a{
+    font-size: 1.8rem;
+  }
+  
+  
+  .top h1{
+    font-size: 3.5rem;
+    margin: 2em 1em 1.5em 1em;
+  }
+  
+  h1 .a{
+    font-size: 5rem;
+  }
+  
+  .top p{
+    font-size: 1.5rem;
+    padding: 2.5em 2em;
+    margin-bottom: 3em;
+  }
+  
+  .socials h3{
+    font-size: 2rem;
+    padding: 0.5em 1.5em;
+  }
+  
+  .socials{
+    padding: 2em;
+    margin: 3em 4em;
+  }
+  
+  .sites a{
+    font-size: 2rem;
+  }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+  header a{
+    font-size: 2.8rem;
+  }
+  
+  
+  .top h1{
+    font-size: 4.5rem;
+    margin: 3em 1em 1.5em 1em;
+  }
+  
+  h1 .a{
+    font-size: 8rem;
+  }
+  
+  .top p{
+    font-size: 2rem;
+    padding: 2.5em 2em;
+    margin-bottom: 3em;
+  }
+  
+  .socials h3{
+    font-size: 3rem;
+    padding: 0.5em 0;
+  }
+  
+  .socials{
+    padding: 2em;
+    margin: 3em 10em;
+  }
+  
+  .sites a{
+    font-size: 2.5rem;
+  }
+}
