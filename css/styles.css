@@ -1,16 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap');
+
+
 *{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body{
   margin: 0;
 }
 
-.header{
-  background-color: #303030;
-  border-bottom: solid 2px;
-}
-
-.text-center{
+header{
   text-align: center;
 }
+
+header a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.hero-bg{
+  background-color:black;
+}
+
+.socials{
+  background-color: white;
+}
+
+.top h1{
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2em 2em 1em 2em;
+  font-weight: bold;
+}
+
+.top p{
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  padding: 0 2em;
+  margin-bottom: 2em;
+}
+
+.socials h3{
+  text-align: center;
+  padding: 1.5em;
+}
+
+.sites a{
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: gray;
+}
+
