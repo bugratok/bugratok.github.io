@@ -16,7 +16,7 @@ header{
 header a{
   color: white;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 3.8rem;
 }
 
 .hero-bg{
@@ -30,22 +30,23 @@ header a{
 .top h1{
   color: white;
   text-align: center;
-  font-size: 2.5rem;
-  margin: 2em 2em 1em 2em;
+  font-size: 5.5rem;
+  margin: 3.5em 0em 0.5em 0em;
   font-weight: bold;
 }
 
 .top p{
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   color: white;
   text-align: center;
   padding: 0 2em;
-  margin-bottom: 2em;
+  margin-bottom: 6em;
 }
 
 .socials h3{
+  font-size: 6rem;
   text-align: center;
-  padding: 1.5em;
+  padding: 0.8em;
 }
 
 .sites a{
@@ -53,5 +54,6 @@ header a{
   display: block;
   text-decoration: none;
   color: gray;
+  font-size: 4.5rem;
 }
 
