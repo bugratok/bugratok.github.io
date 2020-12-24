@@ -5,12 +5,21 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+html{
+  background-color: rgb(30, 30, 30);
+}
+
 body{
   margin: 0;
+
 }
 
 header{
   text-align: center;
+  background-color: black;
+  position: fixed;
+  top:0;
+  width: 100%;
 }
 
 header a{
@@ -20,7 +29,7 @@ header a{
 }
 
 .hero-bg{
-  background-color:black;
+  background-color: rgb(30, 30, 30);
 }
 
 .socials{
@@ -31,22 +40,32 @@ header a{
   color: white;
   text-align: center;
   font-size: 5.5rem;
-  margin: 3.5em 0em 0.5em 0em;
+  margin: 4em 1em 1.5em 1em;
   font-weight: bold;
 }
 
+h1 .a{
+  display: block;
+  font-size: 12rem;
+}
+
 .top p{
-  font-size: 2.6rem;
+  font-size: 3rem;
   color: white;
   text-align: center;
-  padding: 0 2em;
-  margin-bottom: 6em;
+  padding: 2.5em 2em;
+  margin-bottom: 3em;
 }
 
 .socials h3{
   font-size: 6rem;
   text-align: center;
-  padding: 0.8em;
+  padding: 0.5em 0;
+}
+
+.socials{
+  padding: 2em;
+  margin: 3em;
 }
 
 .sites a{
@@ -56,4 +75,3 @@ header a{
   color: gray;
   font-size: 4.5rem;
 }
-

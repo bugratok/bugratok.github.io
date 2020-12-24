@@ -16,8 +16,8 @@
               <header>
                   <a href="#">bugratok</a>
               </header>
-              <h1>A Web Developer</h1>
-              <p>A person who loves to do the things that people says it is impossible for you.</p>
+              <h1><span class="a">A</span> <span id="name">Web Developer</span></h1>
+              <p>I develop myself professionally. Yes, a few software too.</p>
               <div class="socials">
                   <h3>Socials</h3>
                   <div class="sites">
@@ -26,9 +26,24 @@
                     <a href="#">GitHub</a>
                  </div>
               </div>
+              <h1>This site is under construction.</h1>
           </section>
-      </div>
+      </div>    
     </body>
+    <script>
+        var text = ["Traveller", "Photographer", "Developer", "Teacher", "Minimalist"];
+        var counter = 0;
+        var elem = document.getElementById("name");
+        var inst = setInterval(change, 1500);
+
+        function change() {
+        elem.innerHTML = text[counter];
+        counter++;
+        if (counter >= text.length) {
+            counter = 0;
+        }
+        }
+    </script>
 </html>
 
 
