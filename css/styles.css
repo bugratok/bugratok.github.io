@@ -27,7 +27,7 @@ body{
   text-align: center;
   padding: 6em 0 4em 0;
   background-color: lightgrey;
-  box-shadow: 10px 1px 35px black;
+  box-shadow: 5px 1px 100px black;
   z-index: -1;
 }
 
@@ -41,7 +41,7 @@ body{
 
 .top p{
   margin-top: 1em;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
   text-align: center;
 }
@@ -66,7 +66,6 @@ body{
   margin-top: 5em;
   text-align: center;
   background-color: lightgrey;
-  box-shadow: 10px 1px 35px black;
 }
 .languages h2{
   font-size: 2rem;
