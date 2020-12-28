@@ -5,148 +5,92 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-html{
-  background-color: rgb(30, 30, 30);
-}
-
 body{
   margin: 0;
-
 }
 
-header{
-  text-align: center;
+.logo{
   background-color: black;
-  position: fixed;
-  top:0;
   width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
-header a{
+.logo a{
   color: white;
   text-decoration: none;
-  font-size: 3.8rem;
+  font-size: 2rem;
 }
 
-.hero-bg{
-  background-color: rgb(30, 30, 30);
-}
 
-.socials{
-  background-color: white;
+.top{
+  text-align: center;
+  padding: 6em 0 4em 0;
+  background-color: lightgrey;
+  box-shadow: 10px 1px 35px black;
+  z-index: -1;
 }
 
 .top h1{
-  color: white;
-  text-align: center;
-  font-size: 5.5rem;
-  margin: 4em 1em 1.5em 1em;
+  color: black;
+  font-size: 3.5rem;
   font-weight: bold;
-}
-
-h1 .a{
-  display: block;
-  font-size: 12rem;
+  margin-bottom: 1em;
+  
 }
 
 .top p{
-  font-size: 3rem;
-  color: white;
+  margin-top: 1em;
+  font-size: 2rem;
+  color: black;
   text-align: center;
-  padding: 2.5em 2em;
-  margin-bottom: 3em;
 }
 
-.socials h3{
-  font-size: 6rem;
+.education{
+  margin-top: 5em;
   text-align: center;
-  padding: 0.5em 0;
+
+}
+.education h2{
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: lightgrey;
 }
 
-.socials{
-  padding: 2em;
-  margin: 3em;
+.education .school{
+  padding-top: 2em;
 }
 
-.sites a{
+.languages{
+  padding: 3em 0 3em 0;
+  margin-top: 5em;
   text-align: center;
-  display: block;
-  text-decoration: none;
-  color: gray;
-  font-size: 4.5rem;
+  background-color: lightgrey;
+  box-shadow: 10px 1px 35px black;
+}
+.languages h2{
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.languages .language{
+    padding-top: 2em;
+}
+
+.countries{
+  padding: 2em 0 4em 0;
+  margin-top: 5em;
+  text-align: center;
+}
+
+.countries h2{
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: lightgrey;
 }
 
 
-@media only screen and (max-width: 1000px) {
-   header a{
-    font-size: 1.8rem;
-  }
-  
-  
-  .top h1{
-    font-size: 3.5rem;
-    margin: 2em 1em 1.5em 1em;
-  }
-  
-  h1 .a{
-    font-size: 5rem;
-  }
-  
-  .top p{
-    font-size: 1.5rem;
-    padding: 2.5em 2em;
-    margin-bottom: 3em;
-  }
-  
-  .socials h3{
-    font-size: 2rem;
-    padding: 0.5em 1.5em;
-  }
-  
-  .socials{
-    padding: 2em;
-    margin: 3em 4em;
-  }
-  
-  .sites a{
-    font-size: 2rem;
-  }
-}
-
-
-
-@media only screen and (min-width: 1000px) {
-  header a{
-    font-size: 2.8rem;
-  }
-  
-  
-  .top h1{
-    font-size: 4.5rem;
-    margin: 3em 1em 1.5em 1em;
-  }
-  
-  h1 .a{
-    font-size: 8rem;
-  }
-  
-  .top p{
-    font-size: 2rem;
-    padding: 2.5em 2em;
-    margin-bottom: 3em;
-  }
-  
-  .socials h3{
-    font-size: 3rem;
-    padding: 0.5em 0;
-  }
-  
-  .socials{
-    padding: 2em;
-    margin: 3em 10em;
-  }
-  
-  .sites a{
-    font-size: 2.5rem;
-  }
+.countries .place{
+  padding-top: 2em;
 }
