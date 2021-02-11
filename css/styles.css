@@ -1,95 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 *{
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, Arial;
+
+}
+html{
+  background-color: hsl(160, 50%, 35%);
 }
 
-body{
-  margin: 0;
+header{
+  display: flex;
+  position: absolute;
+  top: 150px;
+  left: 100px;
 }
 
-.logo{
-  background-color: black;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
+header h1{
+  font-size: 3rem;
 }
 
-.logo a{
-  color: white;
+#title{
+  display: flex;
+  text-transform: uppercase;
+  float: left;
+  font-size: 1rem;
+  position: absolute;
+  left: 100px;
+  top: 30px;
+}
+
+.options h3{
+  display: flex;
+  position: absolute;
+  left: 100px;
+  top: 400px;
+  text-decoration: underline;
+}
+
+nav{
+  display: flex;
+  position: absolute;
+  right: 100px;
+  top: 30px;
+}
+
+nav h3{
+  font-size: 1rem;
+  margin-left: 30px;
   text-decoration: none;
-  font-size: 2rem;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+nav h3:hover, #title:hover{
+  animation: renk 3s infinite;
+  transform: scale(1.05);
 }
 
 
-.top{
-  text-align: center;
-  padding: 6em 0 4em 0;
-  background-color: lightgrey;
-  box-shadow: 5px 1px 100px black;
-  z-index: -1;
-}
-
-.top h1{
-  color: black;
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 1em;
-  
-}
-
-.top p{
-  margin-top: 1em;
-  font-size: 1.5rem;
-  color: black;
-  text-align: center;
-}
-
-.education{
-  margin-top: 5em;
-  text-align: center;
-
-}
-.education h2{
-  font-size: 2rem;
-  text-decoration: underline;
-  text-decoration-color: lightgrey;
-}
-
-.education .school{
-  padding-top: 2em;
-}
-
-.languages{
-  padding: 3em 0 3em 0;
-  margin-top: 5em;
-  text-align: center;
-  background-color: lightgrey;
-}
-.languages h2{
-  font-size: 2rem;
-  text-decoration: underline;
-  text-decoration-color: black;
-}
-
-.languages .language{
-    padding-top: 2em;
-}
-
-.countries{
-  padding: 2em 0 4em 0;
-  margin-top: 5em;
-  text-align: center;
-}
-
-.countries h2{
-  font-size: 2rem;
-  text-decoration: underline;
-  text-decoration-color: lightgrey;
-}
-
-
-.countries .place{
-  padding-top: 2em;
+@keyframes renk{
+  0%{
+        color: black;
+  }
+  50%{
+        color: white;
+  }
+  100%{
+         color: black;
+  }
 }
