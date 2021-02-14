@@ -1,49 +1,157 @@
 <!DOCTYPE html>
 
 <html>
+
     <head>
-        <link rel="stylesheet" href="bugratok.github.io/styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
         <style>
-            html{
-                margin:0px;
-                padding:0px;
-                background-color: #000;
+            * {
+                font-family: 'Montserrat', Arial;
             }
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .baslik{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 0 15px 0 15px;
+            }
+
+            .header-text-name{
+                font-weight: 700;
+            }
+
+            
+            .navbar{
+                box-shadow: 2x 2px 20px #000;
+                padding: 0 2rem 0 2rem;
+            }
+            .navbar-brand-bugra{
+                font-size: 125%;
+                font-family: 'Dancing Script', Arial;
+                font-weight: 700;
+                color: #000;
+                transition: color 0.5s ease;
+            }
+
+            .discover-btn {
+                background: linear-gradient(to right, rgba(63, 29, 134), rgba(41, 77, 140));
+                transition: border 0.5s ease;
+                border: solid 1px #fff;
+            }
+
+            .discover-btn:hover {
+                background: linear-gradient(to right, rgba(33, 0, 104), rgba(11, 47, 110));
+                border: solid 1px #000;
+            }
+
+            .navbar ul li{
+                margin: 1rem;
+                transition: color 0.5s ease;
+            }
+            .navbar ul li a{
+                transition: color 0.5s ease;
+            }
+
+            .seperator{
+                max-width: 75%;
+                border: 1px solid;
+                border-color: #636363;
+            }
+            @media (min-width: 576px) {
+                
+             }
+
+            @media (min-width: 768px) {
+                .header-text{
+                    font-size: 150%;
+                    text-align: center;
+                 }
+             }
+
+            @media (min-width: 992px) {
+                .header-text{
+                    font-size: 200%;
+                    text-align: center;
+                }
+             }
         </style>
     </head>
 
+
+
     <body>
 
+        <nav class="navbar navbar-light bg-white navbar-expand-md sticky-top">
+            <div class="navbar-brand">
+                <a href="#" class="navbar-brand-bugra text-decoration-none">BUGRA</a>
+            </div>
+            <button type="button" class="navbar-toggler btn btn-outline-tools" data-target="#navbarExpand" data-toggle="collapse">
+                MENU
+            </button>
+            <div id="navbarExpand" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link text-decoration-none">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link text-decoration-none">About Me</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link text-decoration-none">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <nav class="navbar navbar-expand  navbar-dark d-flex justify-content-center" style="background-color: #000;">
-        <ul class="navbar-nav">
-        <li class="nav-item ">
-            <a class="nav-link active" href="#">Bugra Tok</a>
-        </li>
-        </ul>
-    </nav>
-
-    <div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(assets/IMG_20200816_205310.jpg); height: 500px; background-size: cover; background-position: top; padding-top: 20vh; border-radius: 0px;">
-        <div>
-        <h1 class="text-white display-4">Hello!</h1>
-        <h1 class="text-white display-4">Welcome to my personal webpage.</h1>
+        <div class="jumbotron">
+            <div class="row">
+            <div class="col-sm-12 col-md-6 text-center my-auto padding">
+                <h6 class="header-text">MY NAME IS</h6>
+                <h2 class="header-text header-text-name">BUGRA TOK</h2>
+                <p class="header-text">I am Junior Web Developer based in Turkey.</p>
+                <a href="#discover" class="btn discover-btn text-white">DISCOVER NOW</a>
+            </div>
+            <div class="col-sm-12 col-md-6 text-center">
+                <img src="assets/portfolyo.png" class="img-fluid w-75"></img>
+            </div>
+            </div>
         </div>
-       
-        
 
-        <div style="margin-top: 20vh; padding-bottom: 10vh;">
-        <h5 class="text-white">I am a Junior Web Developer - Teacher - Professional Learner based in Turkey.</h5>
-        <h5 class="text-white">I love creating cool stuff!</h5>
+        <div class="container-fluid">
+            <div class="row my-5" id="discover">
+                <div class="col-12 text-center display-4">
+                <div class="about-me">About Me</div>
+                </div>
+            </div>
+            <hr class="seperator"> 
+            <div class="row pt-3" >
+                <div class="col-sm-12 col-md-6 text-center pt-3">
+                    <img src="assets/developer.jpg" class="img-fluid w-75">
+                </div>
+                <div class="col-sm-12 col-md-6 my-auto pt-3">
+                    <h3 class="pb-3">I grew up as a 'tech guy'.</h3>
+                    <p>I always had an interest to everything involved with technology. So my surrounding knew me as a tech guy. I was at their top 3 solution ways for their any technical failure.</p>
+                </div>
+            </div>
+           
         </div>
-    </div>
 
+
+      
     </body>
 
 
