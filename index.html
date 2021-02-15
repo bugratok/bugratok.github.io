@@ -45,7 +45,7 @@
                 padding: 0 2rem 0 2rem;
             }
             .navbar-brand-bugra{
-                font-size: 125%;
+                font-size: 100%;
                 font-weight: 700;
                 color: #000;
                 transition: color 0.5s ease;
@@ -75,6 +75,11 @@
                 border: 1px solid;
                 border-color: #636363;
             }
+
+
+            .padding{
+                padding: 3rem 1rem 3rem 1rem;
+            }
             @media (min-width: 576px) {
                 
              }
@@ -82,14 +87,12 @@
             @media (min-width: 768px) {
                 .header-text{
                     font-size: 150%;
-                    text-align: center;
                  }
              }
 
             @media (min-width: 992px) {
                 .header-text{
                     font-size: 200%;
-                    text-align: center;
                 }
              }
         </style>
@@ -99,7 +102,7 @@
 
     <body>
 
-        <nav class="navbar navbar-light bg-white navbar-expand-md sticky-top">
+        <nav class="navbar navbar-light bg-white navbar-expand-md fixed-top">
             <div class="navbar-brand">
                 <a href="#" class="navbar-brand-bugra text-decoration-none">BUGRA</a>
             </div>
@@ -121,7 +124,7 @@
             </div>
         </nav>
 
-        <div class="jumbotron">
+        <div class="jumbotron padding">
             <div class="row">
             <div class="col-sm-12 col-md-6 text-center my-auto padding">
                 <h6 class="header-text">MY NAME IS</h6>
@@ -146,14 +149,13 @@
                 <div class="col-sm-12 col-md-6 text-center pt-3">
                     <img src="assets/developer.jpg" class="img-fluid w-75">
                 </div>
-                <div class="col-sm-12 col-md-6 my-auto pt-3">
+                <div class="col-sm-12 col-md-6 my-auto pt-3 text-center text-md-left">
                     <h3 class="pb-3">I grew up as a 'tech guy'.</h3>
                     <p>I always had an interest to everything involved with technology. So my surrounding knew me as a tech guy. I was at their top 3 solution ways for their any technical failure.</p>
                 </div>
             </div>
            
         </div>
-
 
       
     </body>
