@@ -17,6 +17,7 @@
                 --background-color: #fff;
                 --text-color: #000;
                 --color-gray: #eee;
+                --color-dark-gray: #636363;
             }
             * {
                 font-family: 'Montserrat', Arial;
@@ -26,7 +27,7 @@
                 scroll-behavior: smooth;
             }
             .bg-white{
-                transition: background-color 0.4s ease-in;
+                transition: background-color 0.3s ease;
                 background-color: var(--background-color)  !important;
             }
             html, body {
@@ -57,12 +58,12 @@
                 font-size: 100%;
                 font-weight: 700;
                 color: var(--text-color);
-                transition: color 0.4s ease;
+                transition: color 0.3s ease;
             }
 
             .discover-btn {
                 background: linear-gradient(to right, rgba(63, 29, 134), rgba(41, 77, 140));
-                transition: border 0.4s ease;
+                transition: border 0.3s ease;
                 border: solid 1px var(--background-color);
             }
 
@@ -75,7 +76,7 @@
                 margin: 1rem;
             }
             .navbar ul li a{
-                transition: color 0.4s ease;
+                transition: color 0.3s ease;
                 color: var(--text-color) !important;
             }
 
@@ -88,6 +89,13 @@
             .jumbotron{
                 background-color: var(--color-gray);
                 color: var(--text-color);
+                transition: background-color 0.3s ease;
+                transition: color 0.3s ease;
+            }
+
+            .menu-button{
+                color: var(--color-dark-gray) !important;
+                border-color: var(--color-dark-gray) !important;
             }
 
             .padding{
@@ -116,6 +124,9 @@
                 --color-gray: #000;
              }
              .color-switch{
+                font-size: 75%;
+                width: 50px;
+                height: 50px;
                 position: fixed; 
                 right: 0; 
                 bottom: 0; 
@@ -123,6 +134,11 @@
                 border-radius: 50%;
                 border: 1px solid var(--text-color);
                 box-shadow: 5px 5px 35px #000;
+                text-decoration: none;
+                text-align: center;
+                padding-top: 15px;
+                background-color: var(--text-color);
+                color: var(--background-color);
              }
     
         </style>
@@ -136,7 +152,7 @@
             <div class="navbar-brand">
                 <a href="#" class="navbar-brand-bugra text-decoration-none">BUGRA</a>
             </div>
-            <button type="button" class="navbar-toggler btn btn-outline-tools" data-target="#navbarExpand" data-toggle="collapse">
+            <button type="button" class="navbar-toggler btn btn-outline-tools menu-button" data-target="#navbarExpand" data-toggle="collapse">
                 MENU
             </button>
             <div id="navbarExpand" class="collapse navbar-collapse">
@@ -160,7 +176,7 @@
                 <h6 class="header-text">MY NAME IS</h6>
                 <h2 class="header-text header-text-name">BUGRA TOK</h2>
                 <p class="header-text">I am Junior Web Developer based in Turkey.</p>
-                <a href="#" class="btn discover-btn text-white">DISCOVER NOW</a>
+                <a href="#discover" class="btn discover-btn text-white">DISCOVER NOW</a>
             </div>
             <div class="col-sm-12 col-md-6 text-center">
                 <img src="assets/portfolyo.png" class="img-fluid w-75"></img>
@@ -187,9 +203,9 @@
            
         </div>
 
-        <button class="btn btn-primary color-switch" id="theme-switcher">
-            X
-        </button>
+        <a type="button" class="color-switch text-decoration-none" id="theme-switcher">
+            CLICK
+        </a>
 
         <script type="text/javascript">
             // Wait for document to load
