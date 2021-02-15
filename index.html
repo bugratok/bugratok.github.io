@@ -13,6 +13,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <style>
+            :root{
+                --background-color: #fff;
+                --text-color: #000;
+            }
             * {
                 font-family: 'Montserrat', Arial;
             }
@@ -20,7 +24,10 @@
             html{
                 scroll-behavior: smooth;
             }
-
+            .bg-white{
+                transition: background-color 0.5s ease-in;
+                background-color: var(--background-color)  !important;
+            }
             html, body {
                 width: 100%;
                 height: 100%;
@@ -44,22 +51,23 @@
                 box-shadow: 2x 2px 20px #000;
                 padding: 0 2rem 0 2rem;
             }
+
             .navbar-brand-bugra{
                 font-size: 100%;
                 font-weight: 700;
-                color: #000;
+                color: var(--text-color);
                 transition: color 0.5s ease;
             }
 
             .discover-btn {
                 background: linear-gradient(to right, rgba(63, 29, 134), rgba(41, 77, 140));
                 transition: border 0.5s ease;
-                border: solid 1px #fff;
+                border: solid 1px var(--background-color);
             }
 
             .discover-btn:hover {
                 background: linear-gradient(to right, rgba(33, 0, 104), rgba(11, 47, 110));
-                border: solid 1px #000;
+                border: solid 1px var(--text-color);
             }
 
             .navbar ul li{
@@ -68,6 +76,7 @@
             }
             .navbar ul li a{
                 transition: color 0.5s ease;
+                color: var(--text-color) !important;
             }
 
             .seperator{
@@ -94,6 +103,12 @@
                 .header-text{
                     font-size: 200%;
                 }
+             }
+
+             [data-theme = "dark"]
+             {
+                --background-color: #000;
+                --text-color: #fff;
              }
         </style>
     </head>
@@ -130,7 +145,7 @@
                 <h6 class="header-text">MY NAME IS</h6>
                 <h2 class="header-text header-text-name">BUGRA TOK</h2>
                 <p class="header-text">I am Junior Web Developer based in Turkey.</p>
-                <a href="#discover" class="btn discover-btn text-white">DISCOVER NOW</a>
+                <a id="theme-switcher" class="btn discover-btn text-white">DISCOVER NOW</a>
             </div>
             <div class="col-sm-12 col-md-6 text-center">
                 <img src="assets/portfolyo.png" class="img-fluid w-75"></img>
@@ -157,7 +172,28 @@
            
         </div>
 
-      
+        <script type="text/javascript">
+            // Wait for document to load
+            document.addEventListener("DOMContentLoaded", function(event) {
+              document.documentElement.setAttribute("data-theme", "light");
+          
+              // Get our button switcher
+              var themeSwitcher = document.getElementById("theme-switcher");
+          
+              // When our button gets clicked
+              themeSwitcher.onclick = function() {
+                // Get the current selected theme, on the first run
+                // it should be `light`
+                var currentTheme = document.documentElement.getAttribute("data-theme");
+          
+                // Switch between `dark` and `light`
+                var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+          
+                // Set our currenet theme to the new one
+                document.documentElement.setAttribute("data-theme", switchToTheme);
+              }
+            });
+          </script>
     </body>
 
 
