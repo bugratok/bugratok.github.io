@@ -83,7 +83,26 @@
             .seperator{
                 max-width: 75%;
                 border: 1px solid;
-                border-color: #636363;
+                border-color: var(--text-color);
+                transition: border-color 0.3s ease;
+            }
+            body{
+                background-color: var(--background-color);
+                transition: background-color 0.3s ease;
+            }
+
+            .section-1{
+                background-color: var(--background-color);
+                color: var(--text-color);
+                transition: color 0.3s ease;
+                transition: background-color 0.3s ease;
+            }
+
+            .section-2{
+                background-color: var(--background-color);
+                color: var(--text-color);
+                transition: color 0.3s ease;
+                transition: background-color 0.3s ease;
             }
 
             .jumbotron{
@@ -91,11 +110,16 @@
                 color: var(--text-color);
                 transition: background-color 0.3s ease;
                 transition: color 0.3s ease;
+                border-radius: 0px;
             }
 
             .menu-button{
                 color: var(--color-dark-gray) !important;
                 border-color: var(--color-dark-gray) !important;
+            }
+
+            .about-me{
+                color: var(--text-color);
             }
 
             .padding{
@@ -122,6 +146,7 @@
                 --background-color: #000;
                 --text-color: #fff;
                 --color-gray: #000;
+
              }
              .color-switch{
                 font-size: 75%;
@@ -139,6 +164,7 @@
                 padding-top: 15px;
                 background-color: var(--text-color);
                 color: var(--background-color);
+                z-index: 2;
              }
     
         </style>
@@ -175,7 +201,7 @@
             <div class="col-sm-12 col-md-6 text-center my-auto padding">
                 <h6 class="header-text">MY NAME IS</h6>
                 <h2 class="header-text header-text-name">BUGRA TOK</h2>
-                <p class="header-text">I am Junior Web Developer based in Turkey.</p>
+                <p class="header-text">I am a Junior Web Developer based in Turkey.</p>
                 <a href="#discover" class="btn discover-btn text-white">DISCOVER NOW</a>
             </div>
             <div class="col-sm-12 col-md-6 text-center">
@@ -184,20 +210,20 @@
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid section-1">
             <div class="row my-5" id="discover">
                 <div class="col-12 text-center display-4">
                 <div class="about-me">About Me</div>
                 </div>
             </div>
             <hr class="seperator"> 
-            <div class="row pt-3" >
+            <div class="row pt-3"  style="margin: 0 2rem 0 2rem;">
                 <div class="col-sm-12 col-md-6 text-center pt-3">
-                    <img src="assets/developer.jpg" class="img-fluid w-75">
+                    <img style="margin: 1rem 0 2rem 0;" src="assets/developer.jpg" class="img-fluid w-75">
                 </div>
                 <div class="col-sm-12 col-md-6 my-auto pt-3 text-center text-md-left">
-                    <h3 class="pb-3">I grew up as a 'tech guy'.</h3>
-                    <p>I always had an interest to everything involved with technology. So my surrounding knew me as a tech guy. I was at their top 3 solution ways for their any technical failure.</p>
+                    <h3 style="margin: 0 0 2rem 0;" class="pb-3">I grew up as a 'tech guy'.</h3>
+                    <p style="margin: 0 0 2rem 0;">I always had an interest to everything involved with technology. So my surrounding knew me as a tech guy. I was at their top 3 solution ways for their any technical failure.</p>
                 </div>
             </div>
            
@@ -206,6 +232,18 @@
         <a type="button" class="color-switch text-decoration-none" id="theme-switcher">
             CLICK
         </a>
+        <hr class="seperator"> 
+
+        <div class="row section-2" style="margin: 2rem 0 2rem 0;">
+            <div class="col-12 my-auto text-center">
+                <div style="background-color: #fff; width: 15rem;" class="mr-auto ml-auto">
+                <img src="https://img.icons8.com/pastel-glyph/64/000000/code--v2.png" style="padding: 2rem 0 2rem 0"/>
+                </div>
+                <h3 style="padding: 1rem 0 2rem 0; font-size: 200%;">Okay, but what I do?</h3>
+                <p>I do Website Designs. I have knowledge of HTML5, CSS3 and JavaScript. Including frameworks such as Bootstrap, JQuery and React.</p>
+            </div>
+        </div>
+        
 
         <script type="text/javascript">
             // Wait for document to load
