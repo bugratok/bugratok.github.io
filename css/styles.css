@@ -5,6 +5,9 @@
     --text-color: #000;
     --color-gray: #eee;
     --color-dark-gray: #636363;
+    --linkedin: #0e76a8;
+    --instagram: #bc2a8d;
+    --mail: #e95950;
 }
 * {
     font-family: 'Montserrat', Arial;
@@ -117,27 +120,15 @@ body{
 
 
 
-@media (min-width: 576px) {
-    
- }
-
-@media (min-width: 768px) {
-    .header-text{
-        font-size: 150%;
-     }
- }
-
-@media (min-width: 992px) {
-    .header-text{
-        font-size: 200%;
-    }
- }
 
  [data-theme = "dark"]
  {
     --background-color: #000;
     --text-color: #fff;
     --color-gray: #000;
+    --linkedin: #0e76a8;
+    --instagram: #bc2a8d;
+    --mail: #e95950;
 
  }
  .color-switch{
@@ -163,3 +154,62 @@ body{
  .post-like{
      border-radius: 50%;
  } 
+
+ .socials{
+     max-width: 75%;
+     margin: auto;
+ }
+
+
+.social-icons{
+    margin: 1rem;           
+    font-size: 1.7rem !important;
+    transition: all 0.3s ease;
+}
+
+
+.social-icons:hover{
+    color: #636363 !important;
+}
+
+
+
+@media (min-width: 576px) {
+    .social-icons{
+        margin: 1.5rem;           
+        font-size: 2.5rem !important;
+    }
+
+    .socials-header{
+        font-size: 2.2rem  !important;
+        }
+}
+
+@media (min-width: 768px) {
+   .header-text{
+       font-size: 150%;
+    }
+
+    .social-icons{
+        margin: 2rem;           
+        font-size: 3.5rem !important;
+    }
+    
+   .socials-header{
+    font-size: 2.5rem  !important;
+    }
+    
+}
+
+@media (min-width: 992px) {
+   .header-text{
+       font-size: 200%;
+   }
+   .socials-header{
+       font-size: 2.7rem !important;
+   }
+   .social-icons{
+    margin: 3rem;           
+    font-size: 4.5rem !important;
+}
+}
