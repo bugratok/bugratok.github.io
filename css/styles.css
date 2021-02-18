@@ -137,24 +137,6 @@ body{
     --mail: #e95950;
  }
 
- .color-switch{
-    font-size: 75%;
-    width: 50px;
-    height: 50px;
-    position: fixed; 
-    right: 0; 
-    bottom: 0; 
-    margin: 0 1.5rem 1.5rem 0; 
-    border-radius: 50%;
-    border: 1px solid var(--text-color);
-    box-shadow: 0.5px 0.5px 15px var(--text-color);
-    text-align: center;
-    background-color: var(--text-color);
-    color: var(--background-color);
-    z-index: 2;
-    cursor: pointer;
-    transition: all 0.3s ease;
- }
 
 
  .post-like{
@@ -229,3 +211,49 @@ body{
         font-size: .9rem;
     }
 }
+
+
+
+.color-switch{
+    font-size: 75%;
+    width: 50px;
+    height: 50px;
+    position: fixed; 
+    right: 20px; 
+    bottom: 30px; 
+    border-radius: 50%;
+    border: 1px solid var(--text-color);
+    box-shadow: 0.5px 0.5px 15px var(--text-color);
+    text-align: center;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+
+ .color-switch:hover{
+     transform: scale(0.95);
+ }
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 90px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: gray; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 6px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    transform: scale(0.95);
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
