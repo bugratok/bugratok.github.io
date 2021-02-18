@@ -116,7 +116,11 @@ body{
     padding: 3rem 1rem 3rem 1rem;
 }
 
-
+.rights{
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    font-size: .7rem;
+}
 
 
 
@@ -183,6 +187,9 @@ body{
     .socials-header{
         font-size: 2.2rem  !important;
         }
+    .rights{
+        font-size: .8rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -198,6 +205,10 @@ body{
    .socials-header{
     font-size: 2.5rem  !important;
     }
+
+    .rights{
+        font-size: .9rem;
+    }
     
 }
 
@@ -212,4 +223,7 @@ body{
     margin: 3rem;           
     font-size: 4.5rem !important;
 }
+    .rights{
+        font-size: .9rem;
+    }
 }
