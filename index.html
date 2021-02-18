@@ -72,9 +72,12 @@
            
         </div>
 
-        <a type="button" class="color-switch text-decoration-none" id="theme-switcher">
-            CLICK
-        </a>
+        <div  class="color-switch text-decoration-none" id="theme-switcher">
+            <img class="post-like img-fluid" src="assets/make-dark.png">
+        </div>
+
+
+
         <hr class="seperator"> 
 
         <div class="row section-2" style="margin: 2rem 0 2rem 0;">
@@ -108,6 +111,17 @@
                 // Set our currenet theme to the new one
                 document.documentElement.setAttribute("data-theme", switchToTheme);
               }
+            });
+
+            $(document).ready(function() { 
+                $('.color-switch').click(function(){
+                    var src = $(".post-like").attr('src');
+
+                    if(src=="assets/make-dark.png")
+                    $(".post-like").attr('src',"assets/make-light.png");
+                    else
+                    $(".post-like").attr('src',"assets/make-dark.png");
+                });
             });
           </script>
     </body>

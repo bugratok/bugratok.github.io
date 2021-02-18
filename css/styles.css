@@ -112,6 +112,11 @@ body{
 .padding{
     padding: 3rem 1rem 3rem 1rem;
 }
+
+
+
+
+
 @media (min-width: 576px) {
     
  }
@@ -142,14 +147,19 @@ body{
     position: fixed; 
     right: 0; 
     bottom: 0; 
-    margin: 0 2rem 2rem 0; 
+    margin: 0 1.5rem 1.5rem 0; 
     border-radius: 50%;
     border: 1px solid var(--text-color);
-    box-shadow: 5px 5px 35px #000;
-    text-decoration: none;
+    box-shadow: 0.5px 0.5px 15px var(--text-color);
     text-align: center;
-    padding-top: 15px;
     background-color: var(--text-color);
     color: var(--background-color);
     z-index: 2;
+    cursor: pointer;
+    transition: all 0.3s ease;
  }
+
+
+ .post-like{
+     border-radius: 50%;
+ } 
