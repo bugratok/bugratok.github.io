@@ -9,6 +9,7 @@
     --instagram: #bc2a8d;
     --mail: #e95950;
 }
+
 * {
     font-family: 'Montserrat', Arial;
 }
@@ -16,6 +17,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 .bg-white{
     transition: background-color 0.3s ease;
     background-color: var(--background-color)  !important;
@@ -133,8 +135,8 @@ body{
     --linkedin: #0e76a8;
     --instagram: #bc2a8d;
     --mail: #e95950;
-
  }
+
  .color-switch{
     font-size: 75%;
     width: 50px;
