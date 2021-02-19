@@ -9,18 +9,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="css/styles.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://use.fontawesome.com/2da0ca3824.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
 
 
     <body>
 
-        <nav class="navbar navbar-light bg-white navbar-expand-md static-top">
+        <nav class="navbar navbar-light bg-white navbar-expand-md fixed-top">
             <div class="navbar-brand">
                 <a href="#" class="navbar-brand-bugra text-decoration-none">BUGRA</a>
             </div>
@@ -38,11 +36,16 @@
                     <li class="navbar-item">
                         <a href="#contact" class="navbar-link text-decoration-none">Contact</a>
                     </li>
+                    <li>
+                        <div  class="color-switch text-decoration-none" id="theme-switcher">
+                            <img class="post-like img-fluid" src="assets/make-dark.png">
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
 
-        <div class="jumbotron padding" data-aos="fade-up">
+        <div class="jumbotron padding">
             <div class="row jumbotron-text">
             <div class="col-sm-12 col-md-6 text-center my-auto padding">
                 <h6 class="header-text">MY NAME IS</h6>
@@ -66,46 +69,44 @@
             <hr class="seperator"> 
 
             <div class="row pt-3"  style="margin: 0 2rem 0 2rem;">
-                <div class="col-sm-12 col-md-6 text-center pt-3" data-aos="fade-up">
+                <div class="col-sm-12 col-md-6 text-center pt-3">
                     <img style="margin: 1rem 0 2rem 0;" src="assets/developer.jpg" class="img-fluid w-75">
                 </div>
-                <div class="col-sm-12 col-md-6 my-auto pt-3 text-center text-md-left"  data-aos="fade-up">
+                <div class="col-sm-12 col-md-6 my-auto pt-3 text-center text-md-left">
                     <h3 style="margin: 0 0 2rem 0;" class="pb-3">I grew up as a 'tech guy'.</h3>
                     <p style="margin: 0 0 2rem 0;">I always had an interest to everything involved with technology. So my surrounding knew me as a tech guy. I was at their top 3 solution ways for their any technical failure.</p>
                 </div>
             </div>
         
 
-        <div  class="color-switch text-decoration-none" id="theme-switcher">
-            <img class="post-like img-fluid" src="assets/make-dark.png">
-        </div>
+        
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="img-fluid up-arrow" src="assets/up-arrow.png"></button>
 
 
 
         <hr class="seperator"> 
 
         <div class="row section-2" style="margin: 2rem 0 2rem 0;">
-            <div class="col-sm-12 col-md-6 my-auto text-center text-md-right" data-aos="fade-up">
+            <div class="col-sm-12 col-md-6 my-auto text-center text-md-right">
                 <h3 style="padding: 1rem 0 2rem 0; font-size: 200%;">Okay, but what I do?</h3>
                 <p>I do Website Designs. I have knowledge of HTML5, CSS3 and JavaScript. Including frameworks such as Bootstrap, JQuery and React.</p>
             </div>
-            <div class="col-sm-12 col-md-6 text-center" data-aos="fade-up">
+            <div class="col-sm-12 col-md-6 text-center">
                 <img src="assets/question-mark.jpg" class="img-fluid w-75" style="margin: 1rem 0 2rem 0;"/>
             </div>
         </div>
 
         <hr class="seperator"> 
 
-        <div class="row text-center"  data-aos="fade-up">
+        <div class="row text-center">
             <div class="col-12">
                 <h3 style="font-size: 2rem; margin-top: 2rem;" class="socials-header">Socials</h3>
             </div>
         </div>
 
 
-        <div class="row" id="contact"  data-aos="fade-up">
+        <div class="row" id="contact">
             <div class="col-12" >
                 <div class="socials text-center">
                     <a href="https://www.instagram.com/heybugra" target="_blank"><i class="fa fa-instagram fa-md social-icons" aria-hidden="true" style="color: var(--instagram);"></i></a>
@@ -119,11 +120,10 @@
 
     <footer>
         <div class="text-center">
-            <h6 class="rights" style="margin-top: 2rem;">2021 Bugra Tok. All rights reserved.</h6>
+            <h6 class="rights" style="margin-top: 2rem;">Copyright © 2021 Bugra Tok. All rights reserved.</h6>
         </div>
     </footer>
         <script type="text/javascript">
-        AOS.init();
             // Wait for document to load
             document.addEventListener("DOMContentLoaded", function(event) {
               document.documentElement.setAttribute("data-theme", "light");

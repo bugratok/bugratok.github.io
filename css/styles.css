@@ -139,9 +139,6 @@ body{
 
 
 
- .post-like{
-     border-radius: 50%;
- } 
 
  .socials{
      max-width: 75%;
@@ -215,19 +212,9 @@ body{
 
 
 .color-switch{
-    font-size: 75%;
-    width: 50px;
-    height: 50px;
-    position: fixed; 
-    right: 20px; 
-    bottom: 30px; 
-    border-radius: 50%;
-    border: 1px solid var(--text-color);
-    box-shadow: 0.5px 0.5px 15px var(--text-color);
-    text-align: center;
+    width: 25px;
+    height: 25px;
     background-color: var(--text-color);
-    color: var(--background-color);
-    z-index: 2;
     cursor: pointer;
     transition: all 0.3s ease;
  }
@@ -240,13 +227,12 @@ body{
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 90px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    bottom: 25px; /* Place the button at the bottom of the page */
+    right: 25px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: gray; /* Set a background color */
-    color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 50%; /* Rounded corners */
@@ -254,6 +240,17 @@ body{
   }
   
   #myBtn:hover {
+    transition: all 0.3s ease;
     transform: scale(0.95);
     background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .up-arrow{
+      width: 10px;
+      height: 10px;
+  }
+
+  footer{
+      background-color: var(--color-gray);
+      transition: all 0.3s ease;
   }
