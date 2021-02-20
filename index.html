@@ -20,8 +20,8 @@
             <div class="navbar-brand">
                 <a href="#" class="navbar-brand-bugra text-decoration-none">BUGRA</a>
             </div>
-            <button type="button" class="navbar-toggler btn btn-outline-tools menu-button" data-target="#navbarExpand" data-toggle="collapse">
-                MENU
+            <button type="button" class="navbar-toggler btn  menu-button" data-target="#navbarExpand" data-toggle="collapse">
+                <span><img src="assets/menu-open.png" class="menu-img text-center"></span>
             </button>
             <div id="navbarExpand" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
@@ -101,6 +101,7 @@
         <div class="row" id="contact">
             <div class="col-12" >
                 <div class="socials text-center">
+                    <a href="https://stackoverflow.com/users/14875097/bugra-tok" target="_blank"><i class="fa fa-stack-overflow social-icons" aria-hidden="true" style="color: var(--stack-overflow);"></i></a>
                     <a href="https://www.instagram.com/heybugra" target="_blank"><i class="fa fa-instagram fa-md social-icons" aria-hidden="true" style="color: var(--instagram);"></i></a>
                     <a href="mailto:bugratok@yahoo.com"><i class="fa fa-envelope-o fa-md social-icons" aria-hidden="true" style="color: var(--mail)"></i></a>
                     <a href="https://www.linkedin.com/in/bugratok/" target="_blank"><i class="fa fa-linkedin fa-md social-icons" aria-hidden="true" style="color: var(--linkedin)"></i></a>
@@ -143,6 +144,18 @@
                       $(".post-like").attr('src',"assets/make-light.png");
                       else
                       $(".post-like").attr('src',"assets/make-dark.png");
+                  });
+              });
+
+
+              $(document).ready(function() { 
+                  $('.menu-button').click(function(){
+                      var src = $(".menu-img").attr('src');
+  
+                      if(src=="assets/menu-open.png")
+                      $(".menu-img").attr('src',"assets/menu-close.png");
+                      else
+                      $(".menu-img").attr('src',"assets/menu-open.png");
                   });
               });
     </script>
