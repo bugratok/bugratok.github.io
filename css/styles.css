@@ -107,8 +107,21 @@ body{
 }
 
 .menu-button{
-    color: var(--color-dark-gray) !important;
-    border-color: var(--color-dark-gray) !important;
+    width: 47px;
+    height: 34px;
+    border: none;
+}
+
+.navbar-toggler:focus{
+    outline: none !important;
+}
+
+.menu-button .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: var(--text-color);
+    margin-bottom: 5px;
 }
 
 .about-me{
@@ -256,8 +269,3 @@ body{
       transition: all 0.3s ease;
   }
 
-  .menu-img{
-      width: 50%;
-      height: 50%;
-      transition: all 0.3s ease;
-  }
