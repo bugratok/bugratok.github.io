@@ -3,8 +3,9 @@ var mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     mybutton.style.display = "block";
+
 } else {
     mybutton.style.display = "none";
 }
@@ -22,14 +23,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var themeSwitcher = document.getElementById("theme-switcher");
 
   themeSwitcher.onclick = function() {
-      var deneme = document.getElementById("post-photo").getAttribute('src');
+      var currentValue = document.getElementById("post-photo").getAttribute('src');
       var image = document.getElementById("post-photo");
-      if(deneme == "assets/make-dark.png"){
+      if(currentValue == "assets/make-dark.png"){
           image.src = "assets/make-light.png";
           document.documentElement.setAttribute("data-theme", "dark");
+          console.log("It is darker now!");
       } else{
           image.src = "assets/make-dark.png";
           document.documentElement.setAttribute("data-theme", "light");
+          console.log("Sun is up!");
       }
   }
 })
+
+
+const menu = document.querySelector('.menu-button');
+
+const mobileMenu = () => {
+    menu.classList.toggle('is-active');
+}
+
+
+menu.addEventListener('click', mobileMenu);

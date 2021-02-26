@@ -262,3 +262,16 @@ body{
       transition: all 0.3s ease;
   }
 
+
+  .menu-button.is-active .line:nth-child(2) {
+      opacity: 0;
+  }
+
+  .menu-button.is-active .line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+    .menu-button.is-active .line:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
