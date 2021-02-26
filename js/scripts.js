@@ -40,9 +40,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 const menu = document.querySelector('.menu-button');
 
-const mobileMenu = () => {
-    menu.classList.toggle('is-active');
-}
+menu.addEventListener('click', function(){
+    let clickCount = 1;
+    if (clickCount == 1){
+        menu.classList.toggle('is-active');
+    }
+    clickCount = 1;
+});
 
 
-menu.addEventListener('click', mobileMenu);
+

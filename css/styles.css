@@ -15,10 +15,6 @@
     font-family: 'Montserrat', Arial;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 .bg-white{
     transition: background-color 0.3s ease;
     background-color: var(--background-color)  !important;
