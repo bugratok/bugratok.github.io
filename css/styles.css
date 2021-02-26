@@ -44,15 +44,26 @@ html, body {
 
 .navbar{
     box-shadow: 2x 2px 20px #000;
-    padding: 0 2rem 0 2rem;
+    padding: .5rem 2rem .5rem 2rem;
+}
+
+.navbar-nav li{
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .navbar-brand-bugra{
-    font-size: 100%;
-    font-weight: 700;
-    color: var(--text-color);
-    transition: color 0.3s ease;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, rgba(203, 69, 114), rgba(61, 77, 140));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
+
+
 
 .discover-btn {
     background: linear-gradient(to right, rgba(63, 29, 134), rgba(41, 77, 140));
@@ -65,6 +76,7 @@ html, body {
 .navbar ul li{
     margin: 1rem;
 }
+
 .navbar ul li a{
     transition: color 0.3s ease;
     color: var(--text-color) !important;
@@ -115,6 +127,7 @@ body{
     height: 2px;
     background-color: var(--text-color);
     margin-bottom: 5px;
+    transition: all 0.2s ease;
 }
 
 .about-me{
@@ -178,6 +191,7 @@ body{
     .rights{
         font-size: .8rem;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -196,6 +210,11 @@ body{
 
     .rights{
         font-size: .9rem;
+    }
+    
+    .navbar{
+        box-shadow: 2x 2px 20px #000;
+        padding: 0 2rem 0 2rem;
     }
     
 }
