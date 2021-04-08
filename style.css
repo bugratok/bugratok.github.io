@@ -274,6 +274,7 @@ body {
 
 .wrapper3 {
     background-image: url("Stacked Wave.svg");
+    background-size: cover;
     text-align: center;
     line-height: 1.5;
     width: 100%;
