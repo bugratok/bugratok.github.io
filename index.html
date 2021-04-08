@@ -1,103 +1,159 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=0'">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd298823a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--NAV_MENU-->
+    <div id="check">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+    </div>
+    <div class="nav-container" id="nav">
+        <ul class="nav-options">
+            <li>
+                Home
+            </li>
+            <li>
+                <a href="#container2">About</a>
+            </li>
+            <li>
+                Contact
+            </li>
+        </ul>
+        <p class="name-date">BUGRA TOK 2021</p>
+    </div>
 
-<html>
-
-    <head>
-        <title>Welcome!</title>
-        <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css"><!--
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
-    </head>
-    <body>
-
-        <!--NAVIGATION-->
-        <nav class="navbar-container">
-            <div class="brand"><h3>BUGRA</h3></div>
-            <input type="checkbox" id="menu">
-            <label for="menu" id="menu-label">
-                <div class="menu-label-div">
-                    <span class="line1"></span>
-                    <span class="line2"></span>
-                    <span class="line3"></span>
+    <!-- MAIN -->
+    <div class="main-content" id="main">
+            <div class="wrapper" id="container">
+                <ul id="scene">
+                    <li class="layer" data-depth="0.40">
+                        <img src="Hexagon.svg" class="hexagon">
+                    </li>
+                </ul> 
+                <div class="header">
+                    <img src="portfolyo.png">
+                    <h1>BUGRA TOK</h1>
+                    <p>Jr. Front-end Developer</p>
+                    <ul class="socials">
+                        <li class="social">
+                            <a href="https://www.linkedin.com/in/bugratok" target="_blank" class="linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a href="https://www.github.com/bugratok" target="_blank" class="github"> 
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="social" >
+                            <a href="https://www.instagram.com/bugradiary" target="_blank" class="instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a href="https://t.me/heybugra" target="_blank"  class="telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </label>
-            <div class="menu-container">
-                <ul class="menu-list">
-                    <li>
-                        Home
+
+                <a class="scrolldown" href="#container2">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="wrapper2" id="container2">
+                <img src="vault_boy.png">
+                <p>Hey, you just found me from somewhere. Congrats! 
+                Well, let me tell you about myself. I am a lifelong learner 
+                with a huge interest in technology. My passion is travelling 
+                the whole world. I have visited 17 so far. A 'short' pause is 
+                happening due to pandemic but also I am an optimist.
+                You know, to accomplish the goals you must work hard.
+                That is what I am doing. If you want to see a website
+                that people call "That looks cool!". Simply contact me. If you
+                need some paperwork and stuff. A document must be somewhere down here.
+                </p>
+                <a href="BugraTokCV.pdf" download>
+                    <i class="fas fa-download"></i>
+                    Download CV</a>
+            </div>
+            <div class="wrapper3">
+                <h2 class="skills-header">What are my skills?</h2>
+                <ul class="skills">
+                    <li class="skill">
+                        <h3>HTML</h3>
+                        <progress value="95" max="100"></progress>
+                        <p>95%</p>
                     </li>
-                    <li>
-                        About me
+                    <li class="skill">
+                        <h3>CSS</h3>
+                        <progress value="85" max="100"></progress>
+                        <p>85%</p>
                     </li>
-                    <li>
-                        Contact
+                    <li class="skill">
+                        <h3>JavaScript</h3>
+                        <progress value="55" max="100"></progress>
+                        <p>55%</p>
                     </li>
-                    <li>
-                        <div class="mode-container">
-                            <img src="assets/make-dark.png" id="post-photo">
-                         </div>
+                    <li class="skill">
+                        <h3>Photoshop</h3>
+                        <progress value="70" max="100"></progress>
+                        <p>70%</p>
+                    </li>
+                    <li class="skill">
+                        <h3>Java</h3>
+                        <progress value="40" max="100"></progress>
+                        <p>40%</p>
+                    </li>
+                    <li class="skill">
+                        <h3>Python</h3>
+                        <progress value="40" max="100"></progress>
+                        <p>40%</p>
+                    </li>
+                </ul>
+                <h2 class="skills-header" style="font-size: 1.2rem">What about my language skills?</h2>
+                <ul class="skills">
+                    <li class="skill">
+                        <h3>Turkish</h3>
+                        <progress value="100" max="100"></progress>
+                        <p>Mother Tongue</p>
+                    </li>
+                    <li class="skill">
+                        <h3>English</h3>
+                        <progress value="88" max="100"></progress>
+                        <p>Advanced</p>
+                    </li>
+                    <li class="skill">
+                        <h3>German</h3>
+                        <progress value="30" max="100"></progress>
+                        <p>Elementary</p>
+                    </li>
+                    <li class="skill">
+                        <h3>Italian</h3>
+                        <progress value="10" max="100"></progress>
+                        <p>Beginner</p>
                     </li>
                 </ul>
             </div>
-        </nav>
-
-        <!--MAIN CONTENT--> 
-        <main class="header-container">
-            <div class="header-info">
-                <h3>MY NAME IS</h3>
-                <h2>BUGRA TOK</h2>
-                <h3>I am a Junior Web Developer based in Turkey.</h3>
-                <a href="#" class="discover-btn">LEARN MORE</a>
-            </div>
-            <div class="header-photo">
-                <img src="assets/portfolyo.webp" class="main-photo">
-            </div>
-        </main>
-
-        <!--TO THE TOP BUTTON-->
-
-        <div class="slider-top" id="myBtn">
-            <span class="material-icons">
-                expand_less
-            </span>
         </div>
 
-        <!--ABOUT-->
-
-        <div class="about-container">
-            <h1>About Me</h1>
-            <hr>
-            <div class="row">
-                <img src="assets/developer.webp">
-                <div class="text">
-                    <h3>I grew up as a 'tech guy'.</h3>
-                    <p>I always had an interest to everything involved with technology. So my surrounding knew me as a tech guy. I was at their top 3 solution ways for their any technical failure.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="text2">
-                    <h3>Okay, but what I do?</h3>
-                    <p>I do Website Designs. I have knowledge of HTML5, CSS3 and JavaScript. Including frameworks such as Bootstrap, JQuery and React.</p>
-                </div>
-                <img src="assets/question-mark.webp" class="question-mark">
-            </div>
-        </div>
-
-        <!--Footer-->
-
-        <footer class="footer-container">
-            <p>Copyright © 2021 Bugra Tok. All rights reserved.</p>
-        </footer>
-
-
-    </body>
-    <script src="js/app.js"></script>
+    <!--SCRIPTS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="parallax.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+    <script src="app.js"></script>
+</body>
 </html>
