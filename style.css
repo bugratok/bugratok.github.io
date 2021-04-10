@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 
@@ -324,7 +325,7 @@ option{
 .skills-header::after{
     content:" ";
     display: block;
-    border: 1px solid lightcoral;
+    border: 1px solid turquoise;
     width: 2rem;
     position: absolute;
     left: 0px;
@@ -344,22 +345,16 @@ option{
     user-select: none;
     border-radius: 20px;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .4);
     margin: .3rem 1rem;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    
 }
 
 .skill:hover{
-    color: black;
-    background-color: #eee;
     clip-path: circle(75%);
+    transition: all .3s;
 }
-
-.skill:hover.skill h3{
-    text-shadow: none;
-}
-
 
 .skill-top {
     clip-path: circle(50% at 50% 100%);
