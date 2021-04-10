@@ -155,8 +155,8 @@ option{
 /* MAIN */
 
 .hexagon {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     opacity: .3;
 }
 
@@ -173,7 +173,7 @@ option{
     border-radius: 50%;
     margin-bottom: 40px;
     width: 250px;
-    height: auto;
+    height: 250px;
 }
 
 .header h1, .header p {
@@ -266,7 +266,7 @@ option{
 .wrapper2 img{
     margin: 5rem 0;
     width: 200px;
-    height: auto;
+    height: 110px;
 }
 .wrapper2 p {
     margin: 0 0 3rem 0;
@@ -479,6 +479,7 @@ progress {
     }
     
     .wrapper2 img{
+        height: 160px;
         width: 300px;
         margin: 3rem 3rem 3rem 2rem;
     }
