@@ -81,6 +81,10 @@ body {
     left: 0;
 }
 
+.nav-container.close {
+    left: -100%;
+}
+
 #check {
     position: fixed;
     top: 15px;
@@ -138,10 +142,15 @@ body {
 }
 
 select{
+    border: initial;
+    color: white;
+    background-color: transparent;
     outline: none;
 }
 
-
+option{
+    background-color: #304294;
+}
 
 /* MAIN */
 
@@ -208,13 +217,19 @@ select{
 
 @keyframes sallanma {
     0% {
-        margin-top: 10px;
+        opacity: .2;
+        transform: scale(.2);
+        margin-top: 0px;
     }
     50% {
-        margin-top: 15px;
+        opacity: 1;
+        transform: scale(1);
+        margin-top: 10px;
     }
     100% {
-        margin-top: 10px;
+        opacity: .2;
+        transform: scale(.2);
+        margin-top: 20px;
     }
 }
 
@@ -234,7 +249,7 @@ select{
 
 
 .wrapper2 {
-    padding: 0px 5%;
+    padding: 0px 2.5rem;
     text-align: center;
     line-height: 1.5;
     width: 100%;
@@ -252,7 +267,6 @@ select{
     width: 200px;
     height: auto;
 }
-
 .wrapper2 p {
     margin: 0 0 3rem 0;
     text-align: justify;
@@ -280,7 +294,6 @@ select{
     color: black;
     border: 2px solid white;
     background-color: white;
-
 }
 
 
@@ -293,7 +306,7 @@ select{
     overflow: hidden;
     color: white;
     background-color: rgb(9, 12, 49, .9);
-    background-blend-mode: multiply;
+    background-blend-mode: saturation;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -316,30 +329,31 @@ select{
 
 .skills {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
 }
 
 .skill{
     margin: 3rem 1rem;
 }
 
+
+
 progress {
-    width: 30vw;
+    width: 250px;
     border-radius: 7px; 
     height: 5px;
-    box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
     margin-bottom: .5rem;
   }
   
   progress::-webkit-progress-bar {
     background-color: white;
-    height: 5px;
+    height: 10px;
   }
 
   progress::-webkit-progress-value {
     background-color: darkcyan;
-    height: 5px;
-    box-shadow: 1px 5px 15px darkcyan;
+    height: 10px;
+    box-shadow: 0px 10px 55px darkcyan;
   }
 
   
@@ -437,5 +451,11 @@ progress {
         max-width: 350px;
         grid-column-start: 1;
         grid-column-end: 3;
+    }
+
+    
+    .skills {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 }
