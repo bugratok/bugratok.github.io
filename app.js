@@ -25,3 +25,4 @@ function navbarBtn(){
     span2.classList.toggle("open");
     span3.classList.toggle("open");
 }
+

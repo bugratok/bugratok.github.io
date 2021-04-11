@@ -11,9 +11,16 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: black;
+
+
 }
 
+
+.carousel-cell {
+    width: 100%; /* full width */
+    height: 160px; /* height of carousel */
+    margin-right: 10px;
+  }
 
 body {
     overflow-x: hidden;
@@ -303,14 +310,12 @@ option{
 .wrapper3 {
     background-image: url("Stacked Wave.svg");
     background-size: cover;
-    text-align: center;
     width: 100%;
-    overflow: hidden;
     color: white;
     background-color: rgb(9, 12, 49, .9);
     background-blend-mode: screen;
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -318,7 +323,7 @@ option{
 .skills-header {
     text-shadow: 3px 3px 5px black;
     font-size: 2rem;
-    margin: 7rem 0 3rem 0;
+    margin: 7rem auto 3rem auto;
     position: relative;
 }
 
@@ -326,64 +331,38 @@ option{
     content:" ";
     display: block;
     border: 1px solid turquoise;
-    width: 2rem;
-    position: absolute;
-    left: 0px;
-    bottom: 0;
+    width: 3rem;
 }
 
-.info {
-    margin-bottom: 3rem;
-}
+.main-carousel {
+    margin: 1rem 0 5rem 0;
+    height: 300px;
+  }
 
-.skills {
-    display: grid;
-    grid-template-columns: auto;
+.carousel-cell{
+    height: 300px;
 }
 
 .skill{
+    margin: 2rem;
+    background: url("Hexagon.svg");
+    background-color: rgba(0,0,0,0.1);
+    background-blend-mode: screen;
+    font-size: 1.5rem;
+    padding: 5rem 0;
+    text-align: center;
     user-select: none;
     border-radius: 20px;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, .4);
-    margin: .3rem 1rem;
+    background-color: transparent;
     cursor: pointer;
-    
+    border: 3px solid white;
 }
-
-.skill:hover{
-    clip-path: circle(75%);
-    transition: all .3s;
-}
-
-.skill-top {
-    clip-path: circle(50% at 50% 100%);
-}
-
-.skill-bottom {
-    clip-path: circle(50% at 50% 0%);
-}
-
-.skill-top h3 {
-    transition: all 0.3s;
-    text-shadow: 3px 3px 5px black;
-    font-size: 2em;
-    margin-top: 5rem;
-}
-
-.skill-bottom h3 {
-    text-shadow: 3px 3px 5px black;
-    font-size: 2em;
-    margin-bottom: 5rem;
-}
-
-
 
 progress {
     width: 250px;
     border-radius: 7px; 
     height: 5px;
-    margin-bottom: .5rem;
+    margin: 1rem 0;
   }
   
   progress::-webkit-progress-bar {
@@ -392,7 +371,7 @@ progress {
   }
 
   progress::-webkit-progress-value {
-    background-color: #304294;
+    background-color: turquoise;
     height: 10px;
   }
 
@@ -492,5 +471,9 @@ progress {
         max-width: 350px;
         grid-column-start: 1;
         grid-column-end: 3;
+    }
+
+    .skill {
+        margin: 0 12rem;
     }
 }

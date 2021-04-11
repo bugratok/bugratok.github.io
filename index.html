@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=0'">
     <title>Welcome!</title>
 	<link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="flickity.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -102,72 +103,107 @@
             </div>
             <div class="wrapper3">
                 <h2 class="skills-header">What are my skills?</h2>
-                <p class="info">(Try touching the skills)</p>
-                <ul class="skills">
-                    <li class="skill skill-top">
-                        <p>95%</p>
-                        <progress value="95" max="100"></progress>
-                        <h3>HTML</h3>
-                    </li>
-                    <li class="skill skill-bottom">
-                        <h3>CSS</h3>
-                        <progress value="85" max="100"></progress>
-                        <p>85%</p>
-                    </li>
-                    <li class="skill skill-top">
-                        <p>55%</p>
-                        <progress value="55" max="100"></progress>
-                        <h3>JavaScript</h3>
-                    </li>
-                    <li class="skill skill-bottom">
-                        <h3>Photoshop</h3>
-                        <progress value="70" max="100"></progress>
-                        <p>70%</p>
-                    </li>
-                    <li class="skill skill-top">
-                        <p>40%</p>
-                        <progress value="40" max="100"></progress>
-                        <h3>Java</h3>
-                    </li>
-                    <li class="skill skill-bottom">
-                        <h3>Python</h3>
-                        <progress value="40" max="100"></progress>
-                        <p>40%</p>
-                    </li>
-                </ul>
-                <h2 class="skills-header">Language skills?</h2>
-                <ul class="skills">
-                    <li class="skill skill-top">
-                        <p>Mother Tongue</p>
-                        <progress value="100" max="100"></progress>
-                        <h3>Turkish</h3>
-                    </li>
-                    <li class="skill skill-bottom">
-                        <h3>English</h3>
-                        <progress value="88" max="100"></progress>
-                        <p>Advanced</p>
-                    </li>
-                    <li class="skill skill-top">
-                        <p>Elementary</p>
-                        <progress value="30" max="100"></progress>
-                        <h3>German</h3>
-                    </li>
-                    <li class="skill skill-bottom">
-                        <h3>Italian</h3>
-                        <progress value="10" max="100"></progress>
-                        <p>Beginner</p>
-                    </li>
-                </ul>
+                
+                <div class="skills-container">
+                    <div class="main-carousel">
+                        <div class="carousel-cell"> 
+                            <li class="skill">
+                                <h3>HTML</h3>
+                                <progress value="95" max="100"></progress>
+                                <p>95%</p>
+                            </li>
+                        </div>
+                        <div class="carousel-cell">
+                            <li class="skill">
+                                <h3>CSS</h3>
+                                <progress value="85" max="100"></progress>
+                                <p>85%</p>
+                            </li>
+                        </div>
+                        <div class="carousel-cell">
+                            <li class="skill">
+                                <h3>JavaScript</h3>
+                                <progress value="55" max="100"></progress>
+                                <p>55%</p>
+                            </li>
+                        </div>
+                        <div class="carousel-cell">
+                            <li class="skill">
+                                <h3>Photoshop</h3>
+                                <progress value="70" max="100"></progress>
+                                <p>70%</p>
+                            </li>
+                        </div>
+                        <div class="carousel-cell">
+                            <li class="skill">
+                                <h3>Java</h3>
+                                <progress value="40" max="100"></progress>
+                                <p>40%</p>
+                            </li>
+                        </div>
+                        <div class="carousel-cell">
+                            <li class="skill">
+                                <h3>Python</h3>
+                                <progress value="40" max="100"></progress>
+                                <p>40%</p>
+                            </li>
+                        </div>
+                        <div class="carousel-cell">
+                            <li class="skill">
+                                <h3>Turkish</h3>
+                                <progress value="100" max="100"></progress>
+                                <p>Mother Tongue</p>
+                            </li>
+                        </div>
+                        <div class="carousel-cell">
+                            <li class="skill">
+                                <h3>English</h3>
+                                <progress value="80" max="100"></progress>
+                                <p>Advanced</p>
+                            </li>
+                        </div>
+                        <div class="carousel-cell">
+                            <li class="skill">
+                                <h3>German</h3>
+                                <progress value="30" max="100"></progress>
+                                <p>Elementary</p>
+                            </li>
+                        </div>
+                        <div class="carousel-cell">
+                            <li class="skill">
+                                <h3>Italian</h3>
+                                <progress value="10" max="100"></progress>
+                                <p>Beginner</p>
+                            </li>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     <!--SCRIPTS-->
+    
     <script src="https://kit.fontawesome.com/bd298823a8.js" crossorigin="anonymous"></script>
     <script src="parallax.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
     </script>
+    <script src="flickity.pkgd.min.js"></script>
+    <script>
+        var elem = document.querySelector('.main-carousel');
+        var flkty = new Flickity( elem, {
+        fullscreen: true,
+        autoPlay: 2500,
+        pauseAutoPlayOnHover: false,
+        pageDots: true,
+        freeScroll: false,
+        wrapAround:true,
+        prevNextButtons: false,
+        adaptiveHeight: true
+        });
+    </script>
     <script src="app.js"></script>
+
 </body>
 </html>
