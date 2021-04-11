@@ -194,13 +194,17 @@
         var elem = document.querySelector('.main-carousel');
         var flkty = new Flickity( elem, {
         fullscreen: true,
-        autoPlay: 2500,
-        pauseAutoPlayOnHover: false,
+        autoPlay: 3000,
+        pauseAutoPlayOnHover: true,
         pageDots: true,
         freeScroll: false,
         wrapAround:true,
         prevNextButtons: false,
         adaptiveHeight: true
+        });
+
+        flkty.on('pointerUp', function (event, pointer) {
+        flkty.player.play();
         });
     </script>
     <script src="app.js"></script>
