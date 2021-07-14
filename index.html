@@ -3,211 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=0'">
-    <title>Welcome!</title>
-	<link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="flickity.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>BUGRATOK</title>
 </head>
 <body>
-    <!--NAV_MENU-->
-    <div id="check">
-        <span class="line1"></span>
-        <span class="line2"></span>
-        <span class="line3"></span>
-    </div>
-    <div class="nav-container" id="nav">
-        <ul class="nav-options">
-            <li>
-                Home
-            </li>
-            <li>
-                <a href="#container2">About</a>
-            </li>
-            <li>
-                Contact
-            </li>
-            <li class="select-wrapper">
-                <select name="lang" id="lang">
-                    <option value="en" selected>English</option>
-                    <option value="tr">Türkçe</option>
-                    <option value="de" >Deutsch</option>
-                </select>
-            </li>
-        </ul>
-        <p class="name-date">BUGRA TOK 2021</p>
-    </div>
-
-    <!-- MAIN -->
-    <div class="main-content" id="main">
-            <div class="wrapper" id="container">
-                <ul id="scene">
-                    <li class="layer" data-depth="0.40">
-                        <img src="Hexagon.svg" class="hexagon">
-                    </li>
-                </ul> 
-                <div class="header">
-                    <picture>
-                        <source srcset="portfolyo.webp">
-                        <img src="portfolyo.png">
-                     </picture>
-                    <h1>BUGRA TOK</h1>
-                    <p>Jr. Front-end Developer</p>
-                    <ul class="socials">
-                        <li class="social">
-                            <a href="https://www.linkedin.com/in/bugratok" target="_blank" class="linkedin">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="social">
-                            <a href="https://www.github.com/bugratok" target="_blank" class="github"> 
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="social" >
-                            <a href="https://www.instagram.com/bugradiary" target="_blank" class="instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="social">
-                            <a href="https://t.me/heybugra" target="_blank"  class="telegram">
-                                <i class="fab fa-telegram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <a class="scrolldown" href="#container2">
-                    <span></span>
-                    <span></span>
-                </a>
+    <div id="fullpage">
+        <div class="section s1">
+            <img src="./portfolyo.png">
+            <h1>Bugra Tok</h1>
+            <h3>Jr. Front-end Developer</h3>
+            <ul class="socials">
+                <li class="social">
+                    <a href="https://www.linkedin.com/in/bugratok" target="_blank" class="linkedin">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social">
+                    <a href="https://www.github.com/bugratok" target="_blank" class="github"> 
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social">
+                    <a href="https://www.instagram.com/bugradiary" target="_blank" class="instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social">
+                    <a href="https://t.me/heybugra" target="_blank" class="telegram">
+                        <i class="fab fa-telegram" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <a class="scrolldown" href="#2">
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="section s2">
+            <img src="vault_boy.png">
+            <p>
+                Hey, you just found me from somewhere. Congrats! Well, let me tell you about myself. I am a lifelong learner with a huge interest in technology. My passion is travelling the whole world. I have visited 17 so far. A 'short' pause is happening due to pandemic but also I am an optimist. You know, to accomplish the goals you must work hard. That is what I am doing. If you want to see a website that people call "That looks cool!". Simply contact me. If you need some paperwork and stuff. A document must be somewhere down here.
+            </p>
+            <a href="bugraTokCV.pdf" download>
+                <i class="fas fa-download"></i>
+                Download Resume</a>
+        </div>
+        <div class="section s3">
+            <h1>Swipe through my skills</h1>
+            <div class="slide">
+                <label for="file">HTML</label>
+                <progress id="file" value="95" max="100"></progress>
             </div>
-            <div class="wrapper2" id="container2">
-                <picture>
-                    <source srcset="vault_boy.webp">
-                    <img src="vault_boy.png">
-                 </picture>
-                <p>Hey, you just found me from somewhere. Congrats! 
-                Well, let me tell you about myself. I am a lifelong learner 
-                with a huge interest in technology. My passion is travelling 
-                the whole world. I have visited 17 so far. A 'short' pause is 
-                happening due to pandemic but also I am an optimist.
-                You know, to accomplish the goals you must work hard.
-                That is what I am doing. If you want to see a website
-                that people call "That looks cool!". Simply contact me. If you
-                need some paperwork and stuff. A document must be somewhere down here.
-                </p>
-                <a href="BugraTokCV.pdf" download>
-                    <i class="fas fa-download"></i>
-                    Download Resume</a>
+            <div class="slide">
+                <label for="file">CSS</label>
+                <progress id="file" value="85" max="100"></progress>
             </div>
-            <div class="wrapper3">
-                <h2 class="skills-header">What are my skills?</h2>
-                
-                <div class="skills-container">
-                    <div class="main-carousel">
-                        <div class="carousel-cell"> 
-                            <li class="skill">
-                                <h3>HTML</h3>
-                                <progress value="95" max="100"></progress>
-                                <p>95%</p>
-                            </li>
-                        </div>
-                        <div class="carousel-cell">
-                            <li class="skill">
-                                <h3>CSS</h3>
-                                <progress value="85" max="100"></progress>
-                                <p>85%</p>
-                            </li>
-                        </div>
-                        <div class="carousel-cell">
-                            <li class="skill">
-                                <h3>JavaScript</h3>
-                                <progress value="55" max="100"></progress>
-                                <p>55%</p>
-                            </li>
-                        </div>
-                        <div class="carousel-cell">
-                            <li class="skill">
-                                <h3>Photoshop</h3>
-                                <progress value="70" max="100"></progress>
-                                <p>70%</p>
-                            </li>
-                        </div>
-                        <div class="carousel-cell">
-                            <li class="skill">
-                                <h3>Java</h3>
-                                <progress value="40" max="100"></progress>
-                                <p>40%</p>
-                            </li>
-                        </div>
-                        <div class="carousel-cell">
-                            <li class="skill">
-                                <h3>Python</h3>
-                                <progress value="40" max="100"></progress>
-                                <p>40%</p>
-                            </li>
-                        </div>
-                        <div class="carousel-cell">
-                            <li class="skill">
-                                <h3>Turkish</h3>
-                                <progress value="100" max="100"></progress>
-                                <p>Mother Tongue</p>
-                            </li>
-                        </div>
-                        <div class="carousel-cell">
-                            <li class="skill">
-                                <h3>English</h3>
-                                <progress value="80" max="100"></progress>
-                                <p>Advanced</p>
-                            </li>
-                        </div>
-                        <div class="carousel-cell">
-                            <li class="skill">
-                                <h3>German</h3>
-                                <progress value="30" max="100"></progress>
-                                <p>Elementary</p>
-                            </li>
-                        </div>
-                        <div class="carousel-cell">
-                            <li class="skill">
-                                <h3>Italian</h3>
-                                <progress value="10" max="100"></progress>
-                                <p>Beginner</p>
-                            </li>
-                        </div>
-                    </div>
-                </div>
+            <div class="slide">
+                <label for="file">Javascript</label>
+                <progress id="file" value="75" max="100"></progress>
             </div>
         </div>
-
-    <!--SCRIPTS-->
-    
+        <div class="section s4">Some section4</div>
+    </div>
     <script src="https://kit.fontawesome.com/bd298823a8.js" crossorigin="anonymous"></script>
-    <script src="parallax.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene);
-    </script>
-    <script src="flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        var elem = document.querySelector('.main-carousel');
-        var flkty = new Flickity( elem, {
-        fullscreen: true,
-        autoPlay: 3000,
-        pauseAutoPlayOnHover: true,
-        pageDots: true,
-        freeScroll: false,
-        wrapAround:true,
-        prevNextButtons: false,
-        adaptiveHeight: true
-        });
-
-        flkty.on('pointerUp', function (event, pointer) {
-        flkty.player.play();
-        });
+        new fullpage('#fullpage', {
+        autoScrolling:true,
+        scrollHorizontally: true,
+        verticalCentered: false,
+        scrollingSpeed: 700,
+        anchors: ['1','2','3','4']
+});
     </script>
-    <script src="app.js"></script>
-
 </body>
 </html>
