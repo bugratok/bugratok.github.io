@@ -27,21 +27,21 @@
         background-color: rgba(0,0,0,0.1);
         margin-bottom: 3em;
         position: relative;
-        z-index: 99 !important;
     }
     h1{
         text-shadow: 3px 3px 10px #000;
         text-transform: uppercase;
         margin-bottom: .2em; 
         position: relative;
-        z-index: 99 !important;
     }
     h3{
         font-size: 1em;
         margin-bottom: 1em;
         position: relative;
-        z-index: 99 !important;
     } 
+    ul {
+        z-index: 99;
+    }
 }
 
 $shooting-time: 3000ms;
@@ -147,6 +147,7 @@ $shooting-time: 3000ms;
     justify-content: center;
     position: absolute;
     bottom: 50px;
+    z-index: 99;
 }
 
 .scrolldown :nth-child(1) {
@@ -237,9 +238,7 @@ $shooting-time: 3000ms;
 }
 
 .s3{
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-	animation: gradient 15s ease-in-out infinite;
+    background-color: rgb(0, 50, 50);
     color:White;
     h1{
         position: relative;
@@ -320,5 +319,31 @@ $shooting-time: 3000ms;
     }
     100%{
         transform: translateX(20px);
+    }
+}
+
+
+.s4{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(50, 0, 50);
+    div{
+        a{
+            font-size: 2em;
+            color:#fff;
+            &:hover + span{
+                width: 100%;
+                opacity: 1;
+                transition: all .7s ease-in-out;
+            }
+        }
+        span{
+            display: block;
+            width: 0px;
+            opacity: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: all 1s ease-in-out;
+        }
     }
 }
