@@ -17,10 +17,28 @@
     flex-direction: column;
 }
 
+option{
+    background-color: initial;
+    color: #000;
+}
+
 .s1{
     background: url(img/Sprinkle.svg);
     background-size: cover;
     color: white;
+    #languages{
+        color: white;
+        border: initial;
+        background-color: transparent;
+        z-index: 99;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 45px;
+        &:focus{
+            outline: none;
+        }
+    }
     img {
         width: 250px;
         border-radius: 50%;
@@ -145,6 +163,7 @@ $shooting-time: 3000ms;
 .scrolldown {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 50px;
     z-index: 99;
@@ -345,5 +364,17 @@ $shooting-time: 3000ms;
             background-color: #fff;
             transition: all 1s ease-in-out;
         }
+    }
+}
+
+.footer {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    p{
+        color:white;
+        font-size: .7em;
     }
 }
