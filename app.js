@@ -8,7 +8,4 @@ function trlang(){
     else if (selectedValue == "english"){
         location.href = "index.html";
     }
-    else if (selectedValue == "german"){
-        location.href = "DE.html";
-    }
 }
