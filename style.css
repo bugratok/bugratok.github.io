@@ -63,6 +63,12 @@ option {
   position: relative;
 }
 
+@media (max-width: 400px) {
+  .s1 img {
+    width: 200px;
+  }
+}
+
 .s1 h1 {
   text-shadow: 3px 3px 10px #000;
   text-transform: uppercase;
@@ -101,143 +107,143 @@ option {
 }
 
 .shooting_star:nth-child(1) {
-  top: calc(50% - -19px);
-  left: calc(50% - 250px);
-  -webkit-animation-delay: 5956ms;
-          animation-delay: 5956ms;
+  top: calc(50% - -90px);
+  left: calc(50% - 27px);
+  -webkit-animation-delay: 3725ms;
+          animation-delay: 3725ms;
 }
 
 .shooting_star:nth-child(2) {
-  top: calc(50% - -50px);
-  left: calc(50% - 47px);
-  -webkit-animation-delay: 392ms;
-          animation-delay: 392ms;
+  top: calc(50% - -115px);
+  left: calc(50% - 214px);
+  -webkit-animation-delay: 7908ms;
+          animation-delay: 7908ms;
 }
 
 .shooting_star:nth-child(3) {
-  top: calc(50% - -34px);
-  left: calc(50% - 224px);
-  -webkit-animation-delay: 574ms;
-          animation-delay: 574ms;
+  top: calc(50% - -192px);
+  left: calc(50% - 270px);
+  -webkit-animation-delay: 2784ms;
+          animation-delay: 2784ms;
 }
 
 .shooting_star:nth-child(4) {
-  top: calc(50% - 26px);
-  left: calc(50% - 43px);
-  -webkit-animation-delay: 5843ms;
-          animation-delay: 5843ms;
+  top: calc(50% - -79px);
+  left: calc(50% - -38px);
+  -webkit-animation-delay: 7363ms;
+          animation-delay: 7363ms;
 }
 
 .shooting_star:nth-child(5) {
-  top: calc(50% - -175px);
-  left: calc(50% - -44px);
-  -webkit-animation-delay: 2193ms;
-          animation-delay: 2193ms;
+  top: calc(50% - 89px);
+  left: calc(50% - 127px);
+  -webkit-animation-delay: 5038ms;
+          animation-delay: 5038ms;
 }
 
 .shooting_star:nth-child(6) {
-  top: calc(50% - -132px);
-  left: calc(50% - 175px);
-  -webkit-animation-delay: 7812ms;
-          animation-delay: 7812ms;
+  top: calc(50% - 124px);
+  left: calc(50% - 208px);
+  -webkit-animation-delay: 2366ms;
+          animation-delay: 2366ms;
 }
 
 .shooting_star:nth-child(7) {
-  top: calc(50% - -49px);
-  left: calc(50% - 227px);
-  -webkit-animation-delay: 3093ms;
-          animation-delay: 3093ms;
+  top: calc(50% - 113px);
+  left: calc(50% - 298px);
+  -webkit-animation-delay: 9762ms;
+          animation-delay: 9762ms;
 }
 
 .shooting_star:nth-child(8) {
-  top: calc(50% - 51px);
-  left: calc(50% - -25px);
-  -webkit-animation-delay: 2808ms;
-          animation-delay: 2808ms;
+  top: calc(50% - 104px);
+  left: calc(50% - 294px);
+  -webkit-animation-delay: 7731ms;
+          animation-delay: 7731ms;
 }
 
 .shooting_star:nth-child(9) {
-  top: calc(50% - -20px);
-  left: calc(50% - 140px);
-  -webkit-animation-delay: 9106ms;
-          animation-delay: 9106ms;
+  top: calc(50% - 85px);
+  left: calc(50% - 51px);
+  -webkit-animation-delay: 3085ms;
+          animation-delay: 3085ms;
 }
 
 .shooting_star:nth-child(10) {
-  top: calc(50% - 67px);
-  left: calc(50% - 86px);
-  -webkit-animation-delay: 7632ms;
-          animation-delay: 7632ms;
+  top: calc(50% - 190px);
+  left: calc(50% - -38px);
+  -webkit-animation-delay: 3904ms;
+          animation-delay: 3904ms;
 }
 
 .shooting_star:nth-child(11) {
-  top: calc(50% - 122px);
-  left: calc(50% - 320px);
-  -webkit-animation-delay: 481ms;
-          animation-delay: 481ms;
+  top: calc(50% - 119px);
+  left: calc(50% - 338px);
+  -webkit-animation-delay: 2120ms;
+          animation-delay: 2120ms;
 }
 
 .shooting_star:nth-child(12) {
-  top: calc(50% - -84px);
-  left: calc(50% - 161px);
-  -webkit-animation-delay: 7175ms;
-          animation-delay: 7175ms;
+  top: calc(50% - 44px);
+  left: calc(50% - 139px);
+  -webkit-animation-delay: 3196ms;
+          animation-delay: 3196ms;
 }
 
 .shooting_star:nth-child(13) {
-  top: calc(50% - -36px);
-  left: calc(50% - -14px);
-  -webkit-animation-delay: 4399ms;
-          animation-delay: 4399ms;
+  top: calc(50% - -192px);
+  left: calc(50% - 307px);
+  -webkit-animation-delay: 7052ms;
+          animation-delay: 7052ms;
 }
 
 .shooting_star:nth-child(14) {
-  top: calc(50% - 142px);
-  left: calc(50% - 345px);
-  -webkit-animation-delay: 386ms;
-          animation-delay: 386ms;
+  top: calc(50% - -110px);
+  left: calc(50% - 295px);
+  -webkit-animation-delay: 9808ms;
+          animation-delay: 9808ms;
 }
 
 .shooting_star:nth-child(15) {
-  top: calc(50% - 110px);
-  left: calc(50% - 166px);
-  -webkit-animation-delay: 2314ms;
-          animation-delay: 2314ms;
+  top: calc(50% - -82px);
+  left: calc(50% - 238px);
+  -webkit-animation-delay: 4258ms;
+          animation-delay: 4258ms;
 }
 
 .shooting_star:nth-child(16) {
-  top: calc(50% - 43px);
-  left: calc(50% - 350px);
-  -webkit-animation-delay: 7613ms;
-          animation-delay: 7613ms;
+  top: calc(50% - 86px);
+  left: calc(50% - 212px);
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
 }
 
 .shooting_star:nth-child(17) {
-  top: calc(50% - -10px);
-  left: calc(50% - 34px);
-  -webkit-animation-delay: 6268ms;
-          animation-delay: 6268ms;
+  top: calc(50% - 182px);
+  left: calc(50% - 280px);
+  -webkit-animation-delay: 8152ms;
+          animation-delay: 8152ms;
 }
 
 .shooting_star:nth-child(18) {
-  top: calc(50% - -86px);
-  left: calc(50% - 342px);
-  -webkit-animation-delay: 1694ms;
-          animation-delay: 1694ms;
+  top: calc(50% - -53px);
+  left: calc(50% - 113px);
+  -webkit-animation-delay: 3630ms;
+          animation-delay: 3630ms;
 }
 
 .shooting_star:nth-child(19) {
-  top: calc(50% - -81px);
-  left: calc(50% - -16px);
-  -webkit-animation-delay: 9104ms;
-          animation-delay: 9104ms;
+  top: calc(50% - -80px);
+  left: calc(50% - 274px);
+  -webkit-animation-delay: 4806ms;
+          animation-delay: 4806ms;
 }
 
 .shooting_star:nth-child(20) {
-  top: calc(50% - -162px);
-  left: calc(50% - 213px);
-  -webkit-animation-delay: 3045ms;
-          animation-delay: 3045ms;
+  top: calc(50% - 159px);
+  left: calc(50% - 236px);
+  -webkit-animation-delay: 9951ms;
+          animation-delay: 9951ms;
 }
 
 @-webkit-keyframes tail {
@@ -357,7 +363,7 @@ option {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  bottom: 50px;
+  bottom: 5%;
   z-index: 99;
 }
 
@@ -433,11 +439,27 @@ option {
   margin-bottom: 2em;
 }
 
+@media (max-width: 400px) {
+  .s2 img {
+    width: 150px;
+    height: auto;
+  }
+}
+
 .s2 p {
+  margin: 10px 15% 10px 15% !important;
   color: white;
   line-height: 1.5em;
   margin-bottom: 2em;
   text-align: justify;
+}
+
+@media (max-width: 400px) {
+  .s2 p {
+    font-size: .8em;
+    line-height: 1.2em;
+    margin-top: 10%;
+  }
 }
 
 .s2 a {
@@ -461,37 +483,19 @@ option {
 }
 
 .s2 a i {
-  margin-right: .5em;
+  margin-right: .7em;
+}
+
+@media (max-width: 400px) {
+  .s2 a {
+    font-size: .7em;
+  }
 }
 
 .s2 a:hover {
   color: black;
   border: 2px solid white;
   background-color: white;
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .s3 {
@@ -515,6 +519,12 @@ option {
   background-color: lightblue;
 }
 
+@media (max-width: 400px) {
+  .s3 h1 {
+    font-size: 1.5em;
+  }
+}
+
 .s3 .slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,6 +544,12 @@ option {
 .s3 .slide label {
   margin-bottom: 1em;
   font-size: 2em;
+}
+
+@media (max-width: 400px) {
+  .s3 .slide label {
+    font-size: 1.5em;
+  }
 }
 
 .s3 .fp-prev {
@@ -561,6 +577,14 @@ option {
           animation: wavingArrowLeft 4s infinite;
 }
 
+@media (max-width: 400px) {
+  .s3 .left-arrow {
+    left: 15px;
+    height: 50px;
+    width: 30px;
+  }
+}
+
 .s3 .right-arrow {
   display: block;
   position: absolute;
@@ -572,6 +596,14 @@ option {
           clip-path: polygon(100% 50%, 50% 0, 50% 100%);
   -webkit-animation: wavingArrowRight 4s infinite;
           animation: wavingArrowRight 4s infinite;
+}
+
+@media (max-width: 400px) {
+  .s3 .right-arrow {
+    right: 15px;
+    height: 50px;
+    width: 30px;
+  }
 }
 
 @-webkit-keyframes wavingArrowRight {

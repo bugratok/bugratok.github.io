@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap');
 
+@mixin mini-screen {
+    @media (max-width: 400px) { @content; }
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +49,9 @@ option{
         background-color: rgba(0,0,0,0.1);
         margin-bottom: 3em;
         position: relative;
+        @include mini-screen{
+            width: 200px;
+        }
     }
     h1{
         text-shadow: 3px 3px 10px #000;
@@ -165,7 +172,7 @@ $shooting-time: 3000ms;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 50px;
+    bottom: 5%;
     z-index: 99;
 }
 
@@ -213,12 +220,22 @@ $shooting-time: 3000ms;
     img{
         width: 200px;
         margin-bottom: 2em;
+        @include mini-screen{
+            width: 150px;
+            height: auto;    
+        }
     }
     p{
+        margin: 10px 15% 10px 15% !important;
         color:white;
         line-height: 1.5em;
         margin-bottom: 2em;
         text-align: justify;
+        @include mini-screen{
+            font-size: .8em;  
+            line-height: 1.2em;
+            margin-top: 10%;  
+        }
     }
     a {
         transition: .5s all ease;
@@ -232,8 +249,10 @@ $shooting-time: 3000ms;
         height: 2.5rem;
         border: 2px solid white;
         i{
-            margin-right: .5em;
-        
+            margin-right: .7em;
+        }
+        @include mini-screen{
+            font-size: .7em;  
         }
     }
     a:hover{
@@ -243,19 +262,6 @@ $shooting-time: 3000ms;
     }
     
 }
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 .s3{
     background-color: rgb(0, 50, 50);
     color:White;
@@ -272,6 +278,9 @@ $shooting-time: 3000ms;
             height: 3px;
             background-color: lightblue;
         }
+    @include mini-screen{
+        font-size: 1.5em;
+    }
     }
     .slide{
         display: flex;
@@ -281,6 +290,9 @@ $shooting-time: 3000ms;
         label{
             margin-bottom: 1em;
             font-size: 2em;
+            @include mini-screen{
+                font-size: 1.5em;
+            }
         }
     }
     .fp-prev {
@@ -303,6 +315,11 @@ $shooting-time: 3000ms;
         background-color: white;
         clip-path: polygon(0 50%, 50% 0, 50% 100%);
         animation: wavingArrowLeft 4s infinite;
+        @include mini-screen{
+            left: 15px;
+            height: 50px;
+            width: 30px;
+        }
     }
     .right-arrow{
         display: block;
@@ -313,6 +330,11 @@ $shooting-time: 3000ms;
         background-color: white;
         clip-path: polygon(100% 50%, 50% 0, 50% 100%);
         animation: wavingArrowRight 4s infinite;
+        @include mini-screen{
+            right: 15px;
+            height: 50px;
+            width: 30px;
+        }
     }
 }
 
