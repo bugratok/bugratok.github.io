@@ -216,13 +216,14 @@ $shooting-time: 3000ms;
 
 .s2{
     background-image: radial-gradient(circle, #000000, #070707, #0e0e0e, #131313, #171717, #171717, #171717, #171717, #131313, #0e0e0e, #070707, #000000);
-    padding: 0 2em 0 2em;
+    padding: 20px 2em 0 2em;
     img{
+        margin-top: 20px;
         width: 200px;
-        margin-bottom: 2em;
+        margin-bottom: 1.5em;
         @include mini-screen{
-            width: 150px;
-            height: auto;    
+            width: 120px;
+            height: auto;  
         }
     }
     p{
@@ -234,7 +235,7 @@ $shooting-time: 3000ms;
         @include mini-screen{
             font-size: .8em;  
             line-height: 1.2em;
-            margin-top: 10%;  
+            margin-bottom: 1em;
         }
     }
     a {
@@ -252,7 +253,8 @@ $shooting-time: 3000ms;
             margin-right: .7em;
         }
         @include mini-screen{
-            font-size: .7em;  
+            font-size: .6em; 
+            padding: 10px 30px; 
         }
     }
     a:hover{
