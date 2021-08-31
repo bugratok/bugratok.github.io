@@ -21,6 +21,11 @@
     flex-direction: column;
 }
 
+body { 
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 option{
     background-color: initial;
     color: #000;
@@ -370,7 +375,7 @@ $shooting-time: 3000ms;
     display: flex;
     flex-direction: column;
     background-color: rgb(50, 0, 50);
-    div{
+    .container{
         a{
             font-size: 2em;
             color:#fff;
