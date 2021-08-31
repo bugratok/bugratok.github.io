@@ -35,6 +35,27 @@ option{
     background: url(img/Sprinkle.svg);
     background-size: cover;
     color: white;
+    .underDev{
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        animation: blink 3s infinite ease-in-out;
+    }
+
+    @keyframes blink {
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+            color:black;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+
     #languages{
         color: white;
         border: initial;
